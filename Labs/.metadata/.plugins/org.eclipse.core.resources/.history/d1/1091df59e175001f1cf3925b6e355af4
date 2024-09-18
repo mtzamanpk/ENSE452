@@ -96,19 +96,14 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
-  HAL_TIM_Base_Start(&htim4);
 
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
   while (1)
   {
-      // Get the current value of the TIM4 counter
-      uint32_t timer_value = __HAL_TIM_GET_COUNTER(&htim4);
+    /* USER CODE END WHILE */
 
-      // If timer value reaches 1000 (1 second delay), toggle the LED
-      if (timer_value == 1)
-      {
-          // Toggle the green LED connected to PA5
-          HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-      }
+    /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
