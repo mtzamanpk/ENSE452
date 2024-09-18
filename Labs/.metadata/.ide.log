@@ -871,3 +871,792 @@
 2024-09-18 09:36:06,823 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 3935mS.
 2024-09-18 09:36:06,824 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
 2024-09-18 09:36:06,826 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 09:41:24,090 [INFO] WebApp:189 - Connection lost
+2024-09-18 09:41:24,357 [INFO] WebApp:186 - Connection restablished
+2024-09-18 09:58:02,591 [INFO] WebApp:189 - Connection lost
+2024-09-18 09:58:02,874 [INFO] WebApp:186 - Connection restablished
+2024-09-18 09:59:23,059 [INFO] WebApp:189 - Connection lost
+2024-09-18 09:59:23,466 [INFO] WebApp:186 - Connection restablished
+2024-09-18 10:00:06,791 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 557025392 Bytes (700448768)
+2024-09-18 10:00:25,387 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 321529168 Bytes (700448768)
+2024-09-18 10:01:35,689 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 524430672 Bytes (700448768)
+2024-09-18 10:01:36,776 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 542778704 Bytes (700448768)
+2024-09-18 10:01:39,843 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 329701264 Bytes (700448768)
+2024-09-18 10:01:40,189 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 10:01:40,189 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 10:01:40,189 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 10:01:40,191 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 10:01:40,191 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 10:01:40,191 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 10:01:40,191 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 10:01:40,278 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 10:01:40,452 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 10:01:40,484 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 10:01:40,647 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 10:01:40,781 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 10:01:41,091 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 10:01:41,115 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 10:01:41,250 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 10:01:41,294 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 10:01:41,534 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 10:01:41,542 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 10:01:41,626 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 10:01:41,647 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 10:01:41,777 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 10:01:41,822 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 10:01:41,823 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 10:01:41,846 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 10:01:41,984 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 10:01:42,009 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 10:01:42,173 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 10:01:42,644 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 188mS.
+2024-09-18 10:01:42,648 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 10:01:42,726 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 10:01:43,939 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 1291mS.
+2024-09-18 10:01:43,940 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-09-18 10:01:43,944 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:32:58,234 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 10:33:21,124 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 10:33:22,763 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 430435536 Bytes (700448768)
+2024-09-18 10:33:58,873 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 10:34:00,283 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 356548952 Bytes (700448768)
+2024-09-18 10:34:01,433 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 374374744 Bytes (700448768)
+2024-09-18 10:34:03,210 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 440109416 Bytes (700448768)
+2024-09-18 10:34:03,592 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 10:34:03,592 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 10:34:03,592 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 10:34:03,592 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 10:34:03,593 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 10:34:03,593 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 10:34:03,594 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 10:34:03,690 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 10:34:03,806 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 10:34:03,829 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 10:34:03,951 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 10:34:04,053 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 10:34:04,242 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 10:34:04,250 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 10:34:04,332 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 10:34:04,361 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 10:34:04,495 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 10:34:04,501 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 10:34:04,569 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 10:34:04,594 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 10:34:04,704 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 10:34:04,731 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 10:34:04,732 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 10:34:04,755 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 10:34:04,861 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 10:34:04,886 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 10:34:05,052 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 10:34:05,530 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 185mS.
+2024-09-18 10:34:05,534 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 10:34:05,613 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 10:34:06,595 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 1061mS.
+2024-09-18 10:34:06,597 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-09-18 10:34:06,605 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:34:42,581 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 10:34:44,469 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 483871448 Bytes (700448768)
+2024-09-18 10:34:45,902 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 502745816 Bytes (700448768)
+2024-09-18 10:34:47,828 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 537543400 Bytes (700448768)
+2024-09-18 10:34:48,178 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 10:34:48,178 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 10:34:48,178 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 10:34:48,178 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 10:34:48,178 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 10:34:48,178 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 10:34:48,179 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 10:34:48,268 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 10:34:48,380 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 10:34:48,398 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 10:34:48,492 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 10:34:48,564 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 10:34:48,668 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 10:34:48,679 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 10:34:48,754 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 10:34:48,781 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 10:34:48,896 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 10:34:48,904 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 10:34:48,968 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 10:34:48,991 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 10:34:49,099 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 10:34:49,132 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 10:34:49,133 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 10:34:49,162 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 10:34:49,260 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 10:34:49,280 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 10:34:49,456 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 10:34:49,950 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 171mS.
+2024-09-18 10:34:49,956 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 10:34:50,036 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 10:34:50,894 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 938mS.
+2024-09-18 10:34:50,896 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:34:50,900 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:35:20,993 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 10:35:23,618 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 391241728 Bytes (700448768)
+2024-09-18 10:35:24,776 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 410033784 Bytes (700448768)
+2024-09-18 10:35:39,194 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 445326672 Bytes (700448768)
+2024-09-18 10:35:39,610 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 10:35:39,611 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 10:35:39,611 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 10:35:39,611 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 10:35:39,611 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 10:35:39,612 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 10:35:39,613 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 10:35:39,699 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 10:35:39,812 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 10:35:39,840 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 10:35:39,939 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 10:35:40,011 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 10:35:40,110 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 10:35:40,120 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 10:35:40,188 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 10:35:40,214 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 10:35:40,316 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 10:35:40,320 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 10:35:40,388 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 10:35:40,408 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 10:35:40,576 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 10:35:40,615 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 10:35:40,616 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 10:35:40,648 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 10:35:40,733 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 10:35:40,752 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 10:35:40,910 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 10:35:41,265 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 169mS.
+2024-09-18 10:35:41,270 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 10:35:41,354 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 10:35:42,269 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 1000mS.
+2024-09-18 10:35:42,270 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:35:42,273 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:36:17,588 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 10:36:19,551 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 436524624 Bytes (727711744)
+2024-09-18 10:36:21,062 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 454645400 Bytes (727711744)
+2024-09-18 10:36:23,080 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 524377752 Bytes (727711744)
+2024-09-18 10:36:23,424 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 10:36:23,424 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 10:36:23,424 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 10:36:23,424 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 10:36:23,425 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 10:36:23,425 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 10:36:23,426 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 10:36:23,505 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 10:36:23,589 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 10:36:23,607 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 10:36:23,726 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 10:36:23,805 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 10:36:23,908 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 10:36:23,917 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 10:36:23,991 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 10:36:24,018 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 10:36:24,127 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 10:36:24,134 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 10:36:24,201 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 10:36:24,224 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 10:36:24,335 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 10:36:24,366 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 10:36:24,368 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 10:36:24,392 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 10:36:24,486 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 10:36:24,507 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 10:36:24,645 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 10:36:25,086 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 157mS.
+2024-09-18 10:36:25,091 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 10:36:25,178 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 10:36:25,957 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 865mS.
+2024-09-18 10:36:25,958 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-09-18 10:36:25,962 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:36:53,036 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 10:36:54,843 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 376064856 Bytes (727711744)
+2024-09-18 10:36:55,913 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 393890648 Bytes (727711744)
+2024-09-18 10:36:57,680 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 428493656 Bytes (727711744)
+2024-09-18 10:36:58,094 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 10:36:58,095 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 10:36:58,095 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 10:36:58,095 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 10:36:58,095 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 10:36:58,095 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 10:36:58,097 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 10:36:58,169 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 10:36:58,251 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 10:36:58,268 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 10:36:58,354 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 10:36:58,426 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 10:36:58,505 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 10:36:58,513 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 10:36:58,585 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 10:36:58,611 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 10:36:58,723 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 10:36:58,728 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 10:36:58,792 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 10:36:58,818 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 10:36:58,980 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 10:36:59,012 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 10:36:59,012 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 10:36:59,044 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 10:36:59,149 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 10:36:59,165 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 10:36:59,303 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 10:36:59,662 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 180mS.
+2024-09-18 10:36:59,667 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 10:36:59,749 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 10:37:00,684 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 1017mS.
+2024-09-18 10:37:00,685 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-09-18 10:37:00,689 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:37:34,132 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 10:37:36,838 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 440159832 Bytes (727711744)
+2024-09-18 10:37:37,996 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 458988304 Bytes (727711744)
+2024-09-18 10:37:39,565 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 528240216 Bytes (727711744)
+2024-09-18 10:37:39,882 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 10:37:39,882 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 10:37:39,882 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 10:37:39,882 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 10:37:39,883 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 10:37:39,883 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 10:37:39,884 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 10:37:39,963 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 10:37:40,051 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 10:37:40,074 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 10:37:40,189 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 10:37:40,263 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 10:37:40,352 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 10:37:40,362 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 10:37:40,446 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 10:37:40,474 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 10:37:40,599 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 10:37:40,605 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 10:37:40,682 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 10:37:40,707 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 10:37:40,818 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 10:37:40,845 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 10:37:40,845 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 10:37:40,863 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 10:37:40,941 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 10:37:40,959 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 10:37:41,096 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 10:37:41,623 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 156mS.
+2024-09-18 10:37:41,627 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 10:37:41,701 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 10:37:42,527 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 900mS.
+2024-09-18 10:37:42,528 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-09-18 10:37:42,532 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:40:14,348 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 10:40:17,281 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 357800408 Bytes (727711744)
+2024-09-18 10:40:18,961 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 376141072 Bytes (727711744)
+2024-09-18 10:40:20,416 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 410744080 Bytes (727711744)
+2024-09-18 10:40:20,819 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 10:40:20,819 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 10:40:20,819 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 10:40:20,819 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 10:40:20,819 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 10:40:20,819 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 10:40:20,820 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 10:40:20,897 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 10:40:20,990 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 10:40:21,005 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 10:40:21,098 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 10:40:21,163 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 10:40:21,240 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 10:40:21,249 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 10:40:21,328 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 10:40:21,354 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 10:40:21,455 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 10:40:21,461 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 10:40:21,535 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 10:40:21,559 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 10:40:21,678 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 10:40:21,701 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 10:40:21,702 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 10:40:21,722 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 10:40:21,816 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 10:40:21,835 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 10:40:21,993 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 10:40:22,384 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 178mS.
+2024-09-18 10:40:22,387 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 10:40:22,465 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 10:40:23,339 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 952mS.
+2024-09-18 10:40:23,341 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:40:23,345 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:41:46,035 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 10:41:47,959 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 338074544 Bytes (748683264)
+2024-09-18 10:41:49,731 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 273404248 Bytes (748683264)
+2024-09-18 10:41:51,924 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 345755992 Bytes (748683264)
+2024-09-18 10:41:52,362 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 10:41:52,363 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 10:41:52,363 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 10:41:52,363 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 10:41:52,363 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 10:41:52,363 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 10:41:52,364 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 10:41:52,435 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 10:41:52,533 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 10:41:52,550 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 10:41:52,666 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 10:41:52,741 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 10:41:52,832 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 10:41:52,842 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 10:41:52,911 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 10:41:52,936 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 10:41:53,035 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 10:41:53,041 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 10:41:53,102 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 10:41:53,133 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 10:41:53,241 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 10:41:53,266 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 10:41:53,266 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 10:41:53,291 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 10:41:53,374 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 10:41:53,393 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 10:41:53,532 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 10:41:53,910 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 194mS.
+2024-09-18 10:41:53,913 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 10:41:53,986 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 10:41:54,790 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 876mS.
+2024-09-18 10:41:54,790 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:41:54,794 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:48:20,603 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 10:48:23,356 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 495947664 Bytes (748683264)
+2024-09-18 10:48:26,431 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 515344272 Bytes (748683264)
+2024-09-18 10:48:29,001 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 587696016 Bytes (748683264)
+2024-09-18 10:48:29,567 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 10:48:29,567 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 10:48:29,567 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 10:48:29,567 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 10:48:29,568 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 10:48:29,568 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 10:48:29,570 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 10:48:29,647 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 10:48:29,757 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 10:48:29,780 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 10:48:29,864 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 10:48:29,933 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 10:48:30,032 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 10:48:30,042 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 10:48:30,121 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 10:48:30,150 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 10:48:30,242 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 10:48:30,247 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 10:48:30,339 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 10:48:30,360 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 10:48:30,472 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 10:48:30,498 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 10:48:30,499 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 10:48:30,523 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 10:48:30,629 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 10:48:30,648 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 10:48:30,814 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 10:48:31,185 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 192mS.
+2024-09-18 10:48:31,188 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 10:48:31,261 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 10:48:32,226 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 1038mS.
+2024-09-18 10:48:32,227 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-09-18 10:48:32,232 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:51:21,082 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 10:51:22,877 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 629426944 Bytes (748683264)
+2024-09-18 10:51:24,751 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 283469640 Bytes (748683264)
+2024-09-18 10:51:26,700 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 348481352 Bytes (748683264)
+2024-09-18 10:51:27,006 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 10:51:27,006 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 10:51:27,006 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 10:51:27,006 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 10:51:27,006 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 10:51:27,006 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 10:51:27,007 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 10:51:27,090 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 10:51:27,185 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 10:51:27,201 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 10:51:27,292 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 10:51:27,355 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 10:51:27,440 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 10:51:27,451 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 10:51:27,538 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 10:51:27,567 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 10:51:27,673 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 10:51:27,679 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 10:51:27,739 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 10:51:27,760 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 10:51:27,873 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 10:51:27,897 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 10:51:27,897 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 10:51:27,915 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 10:51:28,009 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 10:51:28,026 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 10:51:28,155 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 10:51:28,558 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 213mS.
+2024-09-18 10:51:28,562 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 10:51:28,639 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 10:51:29,471 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 909mS.
+2024-09-18 10:51:29,472 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-09-18 10:51:29,474 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:54:18,127 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 10:54:20,862 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 541467136 Bytes (748683264)
+2024-09-18 10:54:22,265 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 560336216 Bytes (748683264)
+2024-09-18 10:54:24,162 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 595987800 Bytes (748683264)
+2024-09-18 10:54:24,565 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 10:54:24,565 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 10:54:24,565 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 10:54:24,565 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 10:54:24,566 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 10:54:24,566 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 10:54:24,567 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 10:54:24,644 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 10:54:24,736 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 10:54:24,756 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 10:54:24,849 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 10:54:24,917 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 10:54:25,018 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 10:54:25,026 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 10:54:25,095 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 10:54:25,120 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 10:54:25,215 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 10:54:25,221 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 10:54:25,282 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 10:54:25,308 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 10:54:25,418 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 10:54:25,445 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 10:54:25,446 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 10:54:25,469 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 10:54:25,564 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 10:54:25,584 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 10:54:25,723 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 10:54:26,125 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 170mS.
+2024-09-18 10:54:26,128 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 10:54:26,207 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 10:54:27,019 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 890mS.
+2024-09-18 10:54:27,020 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-09-18 10:54:27,024 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:55:11,378 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 10:55:13,022 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 578548416 Bytes (748683264)
+2024-09-18 10:55:14,237 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 597596952 Bytes (748683264)
+2024-09-18 10:55:16,148 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 311118744 Bytes (748683264)
+2024-09-18 10:55:16,532 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 10:55:16,532 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 10:55:16,532 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 10:55:16,532 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 10:55:16,533 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 10:55:16,533 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 10:55:16,534 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 10:55:16,606 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 10:55:16,693 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 10:55:16,710 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 10:55:16,810 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 10:55:16,881 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 10:55:16,975 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 10:55:16,982 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 10:55:17,054 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 10:55:17,085 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 10:55:17,185 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 10:55:17,191 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 10:55:17,260 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 10:55:17,286 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 10:55:17,407 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 10:55:17,431 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 10:55:17,431 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 10:55:17,456 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 10:55:17,534 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 10:55:17,560 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 10:55:17,705 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 10:55:18,103 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 185mS.
+2024-09-18 10:55:18,108 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 10:55:18,191 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 10:55:19,026 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 918mS.
+2024-09-18 10:55:19,027 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-09-18 10:55:19,032 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:56:04,919 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 10:56:12,601 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 566014808 Bytes (760217600)
+2024-09-18 10:56:13,770 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 583385472 Bytes (760217600)
+2024-09-18 10:56:15,861 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 654095192 Bytes (760217600)
+2024-09-18 10:56:16,253 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 10:56:16,253 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 10:56:16,253 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 10:56:16,253 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 10:56:16,253 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 10:56:16,253 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 10:56:16,254 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 10:56:16,334 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 10:56:16,425 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 10:56:16,442 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 10:56:16,526 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 10:56:16,587 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 10:56:16,686 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 10:56:16,694 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 10:56:16,760 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 10:56:16,788 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 10:56:16,892 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 10:56:16,898 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 10:56:16,974 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 10:56:16,999 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 10:56:17,106 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 10:56:17,128 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 10:56:17,130 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 10:56:17,150 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 10:56:17,229 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 10:56:17,248 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 10:56:17,404 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 10:56:17,787 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 195mS.
+2024-09-18 10:56:17,791 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 10:56:17,868 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 10:56:18,686 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 895mS.
+2024-09-18 10:56:18,687 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-09-18 10:56:18,691 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-09-18 10:56:54,468 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 10:56:55,975 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 500412056 Bytes (760217600)
+2024-09-18 10:56:57,333 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 517711512 Bytes (760217600)
+2024-09-18 10:56:59,776 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 589541016 Bytes (760217600)
+2024-09-18 10:57:00,149 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 10:57:00,149 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 10:57:00,149 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 10:57:00,149 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 10:57:00,150 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 10:57:00,150 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 10:57:00,151 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 10:57:00,234 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 10:57:00,326 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 10:57:00,344 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 10:57:00,449 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 10:57:00,511 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 10:57:00,609 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 10:57:00,616 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 10:57:00,688 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 10:57:00,717 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 10:57:00,816 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 10:57:00,822 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 10:57:00,882 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 10:57:00,904 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 10:57:01,009 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 10:57:01,030 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 10:57:01,030 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 10:57:01,049 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 10:57:01,131 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 10:57:01,151 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 10:57:01,292 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 10:57:01,891 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 191mS.
+2024-09-18 10:57:01,895 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 10:57:01,978 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 10:57:02,754 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 858mS.
+2024-09-18 10:57:02,754 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:57:02,757 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:58:59,417 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 10:59:01,124 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 534842880 Bytes (760217600)
+2024-09-18 10:59:02,157 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 552569176 Bytes (760217600)
+2024-09-18 10:59:04,493 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 589791576 Bytes (760217600)
+2024-09-18 10:59:04,870 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 10:59:04,870 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 10:59:04,870 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 10:59:04,870 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 10:59:04,871 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 10:59:04,871 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 10:59:04,872 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 10:59:04,994 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 10:59:05,128 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 10:59:05,186 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 10:59:05,326 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 10:59:05,422 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 10:59:05,519 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 10:59:05,528 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 10:59:05,604 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 10:59:05,633 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 10:59:05,727 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 10:59:05,733 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 10:59:05,820 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 10:59:05,845 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 10:59:05,965 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 10:59:05,997 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 10:59:05,998 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 10:59:06,027 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 10:59:06,122 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 10:59:06,140 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 10:59:06,295 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 10:59:06,744 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 199mS.
+2024-09-18 10:59:06,748 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 10:59:06,839 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 10:59:07,733 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 985mS.
+2024-09-18 10:59:07,736 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-09-18 10:59:07,741 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 10:59:54,561 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 10:59:56,739 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 548406392 Bytes (760217600)
+2024-09-18 10:59:58,099 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 566921328 Bytes (760217600)
+2024-09-18 10:59:59,657 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 292721808 Bytes (760217600)
+2024-09-18 11:00:00,024 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 11:00:00,024 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 11:00:00,024 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 11:00:00,024 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 11:00:00,025 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 11:00:00,025 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 11:00:00,026 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 11:00:00,101 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 11:00:00,185 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 11:00:00,202 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 11:00:00,291 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 11:00:00,361 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 11:00:00,446 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 11:00:00,456 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 11:00:00,534 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 11:00:00,561 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 11:00:00,667 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 11:00:00,672 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 11:00:00,738 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 11:00:00,765 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 11:00:00,875 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 11:00:00,907 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 11:00:00,908 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 11:00:00,929 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 11:00:01,010 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 11:00:01,031 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 11:00:01,160 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 11:00:01,511 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 161mS.
+2024-09-18 11:00:01,514 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 11:00:01,594 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 11:00:02,277 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 763mS.
+2024-09-18 11:00:02,278 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-09-18 11:00:02,282 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 11:00:45,228 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 11:00:46,866 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 287222816 Bytes (760217600)
+2024-09-18 11:00:48,432 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 269948008 Bytes (760217600)
+2024-09-18 11:00:50,494 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 341773416 Bytes (760217600)
+2024-09-18 11:00:50,818 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 11:00:50,818 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 11:00:50,818 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 11:00:50,818 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 11:00:50,818 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 11:00:50,818 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 11:00:50,820 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 11:00:50,896 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 11:00:50,984 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 11:00:51,002 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 11:00:51,092 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 11:00:51,156 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 11:00:51,239 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 11:00:51,249 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 11:00:51,319 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 11:00:51,359 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 11:00:51,453 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 11:00:51,458 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 11:00:51,515 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 11:00:51,540 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 11:00:51,655 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 11:00:51,681 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 11:00:51,682 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 11:00:51,703 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 11:00:51,785 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 11:00:51,803 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 11:00:51,927 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 11:00:52,282 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 165mS.
+2024-09-18 11:00:52,285 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 11:00:52,358 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 11:00:53,109 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 824mS.
+2024-09-18 11:00:53,110 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-09-18 11:00:53,113 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 11:01:27,352 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 11:01:34,917 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 295895936 Bytes (760217600)
+2024-09-18 11:01:36,362 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 293638024 Bytes (760217600)
+2024-09-18 11:01:38,380 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 364613528 Bytes (760217600)
+2024-09-18 11:01:38,680 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 11:01:38,680 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 11:01:38,681 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 11:01:38,681 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 11:01:38,681 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 11:01:38,681 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 11:01:38,682 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 11:01:38,764 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 11:01:38,864 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 11:01:38,886 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 11:01:39,008 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 11:01:39,076 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 11:01:39,154 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 11:01:39,164 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 11:01:39,243 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 11:01:39,270 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 11:01:39,377 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 11:01:39,383 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 11:01:39,450 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 11:01:39,471 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 11:01:39,582 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 11:01:39,604 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 11:01:39,605 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 11:01:39,623 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 11:01:39,707 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 11:01:39,725 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 11:01:39,860 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 11:01:40,212 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 167mS.
+2024-09-18 11:01:40,215 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 11:01:40,286 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 11:01:41,057 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 842mS.
+2024-09-18 11:01:41,059 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 11:01:41,062 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 11:11:47,097 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 373281448 Bytes (760217600)
+2024-09-18 11:11:48,136 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 391107240 Bytes (760217600)
+2024-09-18 11:11:49,869 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 429378216 Bytes (760217600)
+2024-09-18 11:11:50,334 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 11:11:50,334 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 11:11:50,334 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 11:11:50,334 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 11:11:50,334 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 11:11:50,334 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 11:11:50,336 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 11:11:50,410 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 11:11:50,518 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 11:11:50,539 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 11:11:50,636 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 11:11:50,702 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 11:11:50,799 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 11:11:50,822 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 11:11:50,918 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 11:11:50,943 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 11:11:51,069 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 11:11:51,074 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 11:11:51,140 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 11:11:51,163 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 11:11:51,277 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 11:11:51,327 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 11:11:51,328 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 11:11:51,350 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 11:11:51,428 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 11:11:51,446 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 11:11:51,601 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 11:11:51,959 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 169mS.
+2024-09-18 11:11:51,962 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 11:11:52,036 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 11:11:52,920 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 958mS.
+2024-09-18 11:11:52,922 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 11:11:52,926 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 11:13:04,716 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 11:13:06,382 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 497566136 Bytes (760217600)
+2024-09-18 11:13:18,717 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 11:13:22,887 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-09-18 11:13:27,945 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 299016152 Bytes (760217600)
+2024-09-18 11:13:29,730 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 344627160 Bytes (760217600)
+2024-09-18 11:13:30,128 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-09-18 11:13:30,128 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-09-18 11:13:30,128 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: TIM1_8F1
+2024-09-18 11:13:30,128 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-09-18 11:13:30,129 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-09-18 11:13:30,129 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-09-18 11:13:30,130 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-09-18 11:13:30,202 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp_save
+2024-09-18 11:13:30,314 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\license.tmp
+2024-09-18 11:13:30,332 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp_save
+2024-09-18 11:13:30,437 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\gpio.tmp
+2024-09-18 11:13:30,493 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c_save
+2024-09-18 11:13:30,605 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_it.c
+2024-09-18 11:13:30,612 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h_save
+2024-09-18 11:13:30,675 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_it.h
+2024-09-18 11:13:30,697 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c_save
+2024-09-18 11:13:30,826 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\stm32f1xx_hal_msp.c
+2024-09-18 11:13:30,831 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp_save
+2024-09-18 11:13:30,907 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\MXTmpFiles\system.tmp
+2024-09-18 11:13:30,935 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-09-18 11:13:31,042 [INFO] CodeEngine:335 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\stm32f1xx_hal_conf.h
+2024-09-18 11:13:31,065 [WARN] IPConfigManager:3554 - IP not found : TIM
+2024-09-18 11:13:31,066 [WARN] CodeGenerator:4002 - IP not found : null
+2024-09-18 11:13:31,088 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h_save
+2024-09-18 11:13:31,178 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Inc\main.h
+2024-09-18 11:13:31,197 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c_save
+2024-09-18 11:13:31,323 [INFO] CodeEngine:279 - Generated code: C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab1\Core\Src\main.c
+2024-09-18 11:13:31,704 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 175mS.
+2024-09-18 11:13:31,707 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-09-18 11:13:31,778 [INFO] ConfigFileManager:1531 - The Die is : DIE410
+2024-09-18 11:13:32,509 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 802mS.
+2024-09-18 11:13:32,510 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 11:13:32,513 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.
+2024-09-18 11:15:25,542 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
