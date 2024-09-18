@@ -98,6 +98,8 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+	  HAL_Delay(1000);
+	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
 
     /* USER CODE BEGIN 3 */
   }
