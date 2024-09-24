@@ -1,6 +1,6 @@
-// Name: Muhammad Zaman
-// SID: 200449177
-// Assignment #: 1
+Name: Muhammad Zaman
+SID: 200449177
+Assignment #: 1
 
 Complex Number Calculator
 
