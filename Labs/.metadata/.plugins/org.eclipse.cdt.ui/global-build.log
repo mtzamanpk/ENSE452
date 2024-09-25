@@ -129,3 +129,635 @@ Finished building: default.size.stdout
  
 Finished building: Lab1.list
  
+09:27:28 **** Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f103rbtx.d" -MT"Core/Startup/startup_stm32f103rbtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Startup/startup_stm32f103rbtx.o" "../Core/Startup/startup_stm32f103rbtx.s"
+arm-none-eabi-gcc "../Core/Src/cli.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/cli.d" -MT"Core/Src/cli.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/cli.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab2\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-size  Lab2.elf 
+arm-none-eabi-objdump -h -S Lab2.elf  > "Lab2.list"
+   text	   data	    bss	    dec	    hex	filename
+   5536	     12	   1644	   7192	   1c18	Lab2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab2.list
+ 
+09:27:45 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:94:3: warning: implicit declaration of function 'HAL_USART_Transmit'; did you mean 'HAL_UART_Transmit'? [-Wimplicit-function-declaration]
+   94 |   HAL_USART_Transmit(&husart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |   ^~~~~~~~~~~~~~~~~~
+      |   HAL_UART_Transmit
+../Core/Src/main.c:94:23: error: 'husart2' undeclared (first use in this function); did you mean 'huart2'?
+   94 |   HAL_USART_Transmit(&husart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                       ^~~~~~~
+      |                       huart2
+../Core/Src/main.c:94:23: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:94:47: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+   94 |   HAL_USART_Transmit(&husart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                               ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:94:47: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+   94 |   HAL_USART_Transmit(&husart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                               ^~~~~~
+../Core/Src/main.c:94:47: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:103:11: warning: implicit declaration of function 'HAL_USART_Receive'; did you mean 'HAL_UART_Receive'? [-Wimplicit-function-declaration]
+  103 |           HAL_USART_Receive(&husart2, buffer, sizeof(buffer), HAL_MAX_DELAY);
+      |           ^~~~~~~~~~~~~~~~~
+      |           HAL_UART_Receive
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+09:28:33 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:11: warning: implicit declaration of function 'HAL_USART_Transmit'; did you mean 'HAL_UART_Transmit'? [-Wimplicit-function-declaration]
+  103 |           HAL_USART_Transmit(&husart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |           ^~~~~~~~~~~~~~~~~~
+      |           HAL_UART_Transmit
+../Core/Src/main.c:103:31: error: 'husart2' undeclared (first use in this function); did you mean 'huart2'?
+  103 |           HAL_USART_Transmit(&husart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                               ^~~~~~~
+      |                               huart2
+../Core/Src/main.c:103:31: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:103:55: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  103 |           HAL_USART_Transmit(&husart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                       ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:103:55: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  103 |           HAL_USART_Transmit(&husart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                       ^~~~~~
+../Core/Src/main.c:103:55: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:104:11: warning: implicit declaration of function 'HAL_USART_Receive'; did you mean 'HAL_UART_Receive'? [-Wimplicit-function-declaration]
+  104 |           HAL_USART_Receive(&husart2, buffer, sizeof(buffer), HAL_MAX_DELAY);
+      |           ^~~~~~~~~~~~~~~~~
+      |           HAL_UART_Receive
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+09:29:01 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:11: warning: implicit declaration of function 'HAL_USART_Transmit'; did you mean 'HAL_UART_Transmit'? [-Wimplicit-function-declaration]
+  103 |           HAL_USART_Transmit(&husart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |           ^~~~~~~~~~~~~~~~~~
+      |           HAL_UART_Transmit
+../Core/Src/main.c:103:31: error: 'husart2' undeclared (first use in this function); did you mean 'huart2'?
+  103 |           HAL_USART_Transmit(&husart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                               ^~~~~~~
+      |                               huart2
+../Core/Src/main.c:103:31: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:103:55: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  103 |           HAL_USART_Transmit(&husart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                       ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:103:55: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  103 |           HAL_USART_Transmit(&husart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                       ^~~~~~
+../Core/Src/main.c:103:55: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:104:11: warning: implicit declaration of function 'HAL_USART_Receive'; did you mean 'HAL_UART_Receive'? [-Wimplicit-function-declaration]
+  104 |           HAL_USART_Receive(&husart2, buffer, sizeof(buffer), HAL_MAX_DELAY);
+      |           ^~~~~~~~~~~~~~~~~
+      |           HAL_UART_Receive
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+09:30:50 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:11: warning: implicit declaration of function 'HAL_USART_Transmit'; did you mean 'HAL_UART_Transmit'? [-Wimplicit-function-declaration]
+  103 |           HAL_USART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |           ^~~~~~~~~~~~~~~~~~
+      |           HAL_UART_Transmit
+../Core/Src/main.c:103:54: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  103 |           HAL_USART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:103:54: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  103 |           HAL_USART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                      ^~~~~~
+../Core/Src/main.c:103:54: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:104:11: warning: implicit declaration of function 'HAL_USART_Receive'; did you mean 'HAL_UART_Receive'? [-Wimplicit-function-declaration]
+  104 |           HAL_USART_Receive(&huart2, buffer, sizeof(buffer), HAL_MAX_DELAY);
+      |           ^~~~~~~~~~~~~~~~~
+      |           HAL_UART_Receive
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab2\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/mtzam/OneDrive/Desktop/Work/AMB/ENSE452-MuhammadZaman/Labs/Lab2/Debug/../Core/Src/main.c:103: undefined reference to `HAL_USART_Transmit'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/mtzam/OneDrive/Desktop/Work/AMB/ENSE452-MuhammadZaman/Labs/Lab2/Debug/../Core/Src/main.c:104: undefined reference to `HAL_USART_Receive'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/mtzam/OneDrive/Desktop/Work/AMB/ENSE452-MuhammadZaman/Labs/Lab2/Debug/../Core/Src/main.c:105: undefined reference to `HAL_USART_Transmit'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:88: Lab2.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+09:31:05 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:11: warning: implicit declaration of function 'HAL_USART_Transmit'; did you mean 'HAL_UART_Transmit'? [-Wimplicit-function-declaration]
+  103 |           HAL_USART_Transmit(&husart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |           ^~~~~~~~~~~~~~~~~~
+      |           HAL_UART_Transmit
+../Core/Src/main.c:103:31: error: 'husart2' undeclared (first use in this function); did you mean 'huart2'?
+  103 |           HAL_USART_Transmit(&husart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                               ^~~~~~~
+      |                               huart2
+../Core/Src/main.c:103:31: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:103:55: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  103 |           HAL_USART_Transmit(&husart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                       ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:103:55: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  103 |           HAL_USART_Transmit(&husart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                       ^~~~~~
+../Core/Src/main.c:103:55: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:104:11: warning: implicit declaration of function 'HAL_USART_Receive'; did you mean 'HAL_UART_Receive'? [-Wimplicit-function-declaration]
+  104 |           HAL_USART_Receive(&husart2, buffer, sizeof(buffer), HAL_MAX_DELAY);
+      |           ^~~~~~~~~~~~~~~~~
+      |           HAL_UART_Receive
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+09:32:37 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:17: error: redefinition of 'msg'
+  103 |           char *msg = "Welcome to the CLI!\r\n";
+      |                 ^~~
+../Core/Src/main.c:102:17: note: previous definition of 'msg' with type 'char *'
+  102 |           char *msg = "Welcome to the CLI!\r\n";
+      |                 ^~~
+../Core/Src/main.c:106:56: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  106 |              HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                        ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:106:56: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  106 |              HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                        ^~~~~~
+../Core/Src/main.c:106:56: note: include '<string.h>' or provide a declaration of 'strlen'
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+09:32:46 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:56: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  105 |              HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                        ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:105:56: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  105 |              HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                        ^~~~~~
+../Core/Src/main.c:105:56: note: include '<string.h>' or provide a declaration of 'strlen'
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab2\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-size  Lab2.elf 
+arm-none-eabi-objdump -h -S Lab2.elf  > "Lab2.list"
+   text	   data	    bss	    dec	    hex	filename
+   6604	     12	   1644	   8260	   2044	Lab2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab2.list
+ 
+09:32:52 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-size  Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6604	     12	   1644	   8260	   2044	Lab2.elf
+Finished building: default.size.stdout
+ 
+09:33:12 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-size  Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6604	     12	   1644	   8260	   2044	Lab2.elf
+Finished building: default.size.stdout
+ 
+09:33:34 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-size  Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6604	     12	   1644	   8260	   2044	Lab2.elf
+Finished building: default.size.stdout
+ 
+09:38:48 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:14: warning: implicit declaration of function 'HAL_USART_Transmit'; did you mean 'HAL_UART_Transmit'? [-Wimplicit-function-declaration]
+  105 |              HAL_USART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |              ^~~~~~~~~~~~~~~~~~
+      |              HAL_UART_Transmit
+../Core/Src/main.c:105:57: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  105 |              HAL_USART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                         ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:105:57: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  105 |              HAL_USART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                         ^~~~~~
+../Core/Src/main.c:105:57: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:108:14: warning: implicit declaration of function 'HAL_USART_Receive'; did you mean 'HAL_UART_Receive'? [-Wimplicit-function-declaration]
+  108 |              HAL_USART_Receive(&huart2, buffer, sizeof(buffer), HAL_MAX_DELAY);
+      |              ^~~~~~~~~~~~~~~~~
+      |              HAL_UART_Receive
+../Core/Src/main.c:113:18: warning: implicit declaration of function 'strncmp' [-Wimplicit-function-declaration]
+  113 |              if (strncmp((char*)buffer, "LED_ON", 6) == 0) {
+      |                  ^~~~~~~
+../Core/Src/main.c:113:18: note: include '<string.h>' or provide a declaration of 'strncmp'
+../Core/Src/main.c:113:51: warning: 'strncmp' argument 3 type is 'int' where 'unsigned int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  113 |              if (strncmp((char*)buffer, "LED_ON", 6) == 0) {
+      |                                                   ^
+<built-in>: note: built-in 'strncmp' declared here
+../Core/Src/main.c:116:52: warning: 'strncmp' argument 3 type is 'int' where 'unsigned int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  116 |              if (strncmp((char*)buffer, "LED_OFF", 7) == 0) {
+      |                                                    ^
+<built-in>: note: built-in 'strncmp' declared here
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab2\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/mtzam/OneDrive/Desktop/Work/AMB/ENSE452-MuhammadZaman/Labs/Lab2/Debug/../Core/Src/main.c:105: undefined reference to `HAL_USART_Transmit'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/mtzam/OneDrive/Desktop/Work/AMB/ENSE452-MuhammadZaman/Labs/Lab2/Debug/../Core/Src/main.c:108: undefined reference to `HAL_USART_Receive'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/mtzam/OneDrive/Desktop/Work/AMB/ENSE452-MuhammadZaman/Labs/Lab2/Debug/../Core/Src/main.c:111: undefined reference to `HAL_USART_Transmit'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:88: Lab2.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+09:39:06 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:105:56: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  105 |              HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                        ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:105:56: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  105 |              HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                        ^~~~~~
+../Core/Src/main.c:105:56: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:113:18: warning: implicit declaration of function 'strncmp' [-Wimplicit-function-declaration]
+  113 |              if (strncmp((char*)buffer, "LED_ON", 6) == 0) {
+      |                  ^~~~~~~
+../Core/Src/main.c:113:18: note: include '<string.h>' or provide a declaration of 'strncmp'
+../Core/Src/main.c:113:51: warning: 'strncmp' argument 3 type is 'int' where 'unsigned int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  113 |              if (strncmp((char*)buffer, "LED_ON", 6) == 0) {
+      |                                                   ^
+<built-in>: note: built-in 'strncmp' declared here
+../Core/Src/main.c:116:52: warning: 'strncmp' argument 3 type is 'int' where 'unsigned int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  116 |              if (strncmp((char*)buffer, "LED_OFF", 7) == 0) {
+      |                                                    ^
+<built-in>: note: built-in 'strncmp' declared here
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab2\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-size  Lab2.elf 
+arm-none-eabi-objdump -h -S Lab2.elf  > "Lab2.list"
+   text	   data	    bss	    dec	    hex	filename
+   6724	     12	   1644	   8380	   20bc	Lab2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab2.list
+ 
+09:40:25 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:56: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  104 |              HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                        ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:104:56: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  104 |              HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                        ^~~~~~
+../Core/Src/main.c:104:56: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:112:18: warning: implicit declaration of function 'strncmp' [-Wimplicit-function-declaration]
+  112 |              if (strncmp((char*)buffer, "LED_ON", 6) == 0) {
+      |                  ^~~~~~~
+../Core/Src/main.c:112:18: note: include '<string.h>' or provide a declaration of 'strncmp'
+../Core/Src/main.c:112:51: warning: 'strncmp' argument 3 type is 'int' where 'unsigned int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  112 |              if (strncmp((char*)buffer, "LED_ON", 6) == 0) {
+      |                                                   ^
+<built-in>: note: built-in 'strncmp' declared here
+../Core/Src/main.c:115:52: warning: 'strncmp' argument 3 type is 'int' where 'unsigned int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  115 |              if (strncmp((char*)buffer, "LED_OFF", 7) == 0) {
+      |                                                    ^
+<built-in>: note: built-in 'strncmp' declared here
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab2\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-size  Lab2.elf 
+arm-none-eabi-objdump -h -S Lab2.elf  > "Lab2.list"
+   text	   data	    bss	    dec	    hex	filename
+   6724	     12	   1652	   8388	   20c4	Lab2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab2.list
+ 
+09:42:30 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-size  Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6724	     12	   1652	   8388	   20c4	Lab2.elf
+Finished building: default.size.stdout
+ 
+09:43:53 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-size  Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6724	     12	   1652	   8388	   20c4	Lab2.elf
+Finished building: default.size.stdout
+ 
+09:44:41 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-size  Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6724	     12	   1652	   8388	   20c4	Lab2.elf
+Finished building: default.size.stdout
+ 
+09:48:43 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:62:17: error: 'CMD_BUFFER_SIZE' undeclared here (not in a function); did you mean 'IS_DMA_BUFFER_SIZE'?
+   62 | char cmd_buffer[CMD_BUFFER_SIZE];  // Command buffer to accumulate characters
+      |                 ^~~~~~~~~~~~~~~
+      |                 IS_DMA_BUFFER_SIZE
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:98:53: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+   98 |   HAL_UART_Transmit(&huart2, (uint8_t*)welcome_msg, strlen(welcome_msg), HAL_MAX_DELAY);
+      |                                                     ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:98:53: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+   98 |   HAL_UART_Transmit(&huart2, (uint8_t*)welcome_msg, strlen(welcome_msg), HAL_MAX_DELAY);
+      |                                                     ^~~~~~
+../Core/Src/main.c:98:53: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:116:18: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+  116 |              if (strcmp(cmd_buffer, "LED_ON") == 0) {
+      |                  ^~~~~~
+../Core/Src/main.c:116:18: note: include '<string.h>' or provide a declaration of 'strcmp'
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+09:49:21 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:63:17: error: 'CMD_BUFFER_SIZE' undeclared here (not in a function); did you mean 'IS_DMA_BUFFER_SIZE'?
+   63 | char cmd_buffer[CMD_BUFFER_SIZE];  // Command buffer to accumulate characters
+      |                 ^~~~~~~~~~~~~~~
+      |                 IS_DMA_BUFFER_SIZE
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+09:50:13 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:63:17: error: 'CMD_BUFFER_SIZE' undeclared here (not in a function); did you mean 'IS_DMA_BUFFER_SIZE'?
+   63 | char cmd_buffer[CMD_BUFFER_SIZE];  // Command buffer to accumulate characters
+      |                 ^~~~~~~~~~~~~~~
+      |                 IS_DMA_BUFFER_SIZE
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+09:50:26 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab2\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-size  Lab2.elf 
+arm-none-eabi-objdump -h -S Lab2.elf  > "Lab2.list"
+   text	   data	    bss	    dec	    hex	filename
+   6900	     12	   1716	   8628	   21b4	Lab2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab2.list
+ 
+09:52:53 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab2\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-size  Lab2.elf 
+arm-none-eabi-objdump -h -S Lab2.elf  > "Lab2.list"
+   text	   data	    bss	    dec	    hex	filename
+   6548	     12	   1644	   8204	   200c	Lab2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab2.list
+ 
+09:54:44 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:62:17: error: 'CMD_BUFFER_SIZE' undeclared here (not in a function); did you mean 'IS_DMA_BUFFER_SIZE'?
+   62 | char cmd_buffer[CMD_BUFFER_SIZE];  // Command buffer to accumulate characters
+      |                 ^~~~~~~~~~~~~~~
+      |                 IS_DMA_BUFFER_SIZE
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:98:56: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+   98 |      HAL_UART_Transmit(&huart2, (uint8_t*)welcome_msg, strlen(welcome_msg), HAL_MAX_DELAY);
+      |                                                        ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:98:56: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+   98 |      HAL_UART_Transmit(&huart2, (uint8_t*)welcome_msg, strlen(welcome_msg), HAL_MAX_DELAY);
+      |                                                        ^~~~~~
+../Core/Src/main.c:98:56: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:117:18: warning: implicit declaration of function 'strncmp' [-Wimplicit-function-declaration]
+  117 |              if (strncmp((char*)buffer, "LED_ON", 6) == 0) {
+      |                  ^~~~~~~
+../Core/Src/main.c:117:18: note: include '<string.h>' or provide a declaration of 'strncmp'
+../Core/Src/main.c:117:51: warning: 'strncmp' argument 3 type is 'int' where 'unsigned int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  117 |              if (strncmp((char*)buffer, "LED_ON", 6) == 0) {
+      |                                                   ^
+<built-in>: note: built-in 'strncmp' declared here
+../Core/Src/main.c:120:52: warning: 'strncmp' argument 3 type is 'int' where 'unsigned int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  120 |              if (strncmp((char*)buffer, "LED_OFF", 7) == 0) {
+      |                                                    ^
+<built-in>: note: built-in 'strncmp' declared here
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+09:55:46 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:56: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  104 |              HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                        ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:104:56: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  104 |              HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                                        ^~~~~~
+../Core/Src/main.c:104:56: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c:112:18: warning: implicit declaration of function 'strncmp' [-Wimplicit-function-declaration]
+  112 |              if (strncmp((char*)buffer, "LED_ON", 6) == 0) {
+      |                  ^~~~~~~
+../Core/Src/main.c:112:18: note: include '<string.h>' or provide a declaration of 'strncmp'
+../Core/Src/main.c:112:51: warning: 'strncmp' argument 3 type is 'int' where 'unsigned int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  112 |              if (strncmp((char*)buffer, "LED_ON", 6) == 0) {
+      |                                                   ^
+<built-in>: note: built-in 'strncmp' declared here
+../Core/Src/main.c:115:52: warning: 'strncmp' argument 3 type is 'int' where 'unsigned int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  115 |              if (strncmp((char*)buffer, "LED_OFF", 7) == 0) {
+      |                                                    ^
+<built-in>: note: built-in 'strncmp' declared here
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab2\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-size  Lab2.elf 
+arm-none-eabi-objdump -h -S Lab2.elf  > "Lab2.list"
+   text	   data	    bss	    dec	    hex	filename
+   6724	     12	   1652	   8388	   20c4	Lab2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab2.list
+ 
+09:56:09 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab2\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-size  Lab2.elf 
+arm-none-eabi-objdump -h -S Lab2.elf  > "Lab2.list"
+   text	   data	    bss	    dec	    hex	filename
+   6724	     12	   1652	   8388	   20c4	Lab2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab2.list
+ 
+09:57:20 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:14: warning: implicit declaration of function 'HAL_USART2_Transmit'; did you mean 'HAL_UART_Transmit'? [-Wimplicit-function-declaration]
+  104 |              HAL_USART2_Transmit(&husart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |              ^~~~~~~~~~~~~~~~~~~
+      |              HAL_UART_Transmit
+../Core/Src/main.c:104:35: error: 'husart2' undeclared (first use in this function); did you mean 'huart2'?
+  104 |              HAL_USART2_Transmit(&husart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |                                   ^~~~~~~
+      |                                   huart2
+../Core/Src/main.c:104:35: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+09:57:33 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:14: warning: implicit declaration of function 'HAL_USART2_Transmit'; did you mean 'HAL_UART_Transmit'? [-Wimplicit-function-declaration]
+  104 |              HAL_USART2_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |              ^~~~~~~~~~~~~~~~~~~
+      |              HAL_UART_Transmit
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab2\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/mtzam/OneDrive/Desktop/Work/AMB/ENSE452-MuhammadZaman/Labs/Lab2/Debug/../Core/Src/main.c:104: undefined reference to `HAL_USART2_Transmit'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/mtzam/OneDrive/Desktop/Work/AMB/ENSE452-MuhammadZaman/Labs/Lab2/Debug/../Core/Src/main.c:107: undefined reference to `HAL_USART2_Transmit'
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: C:/Users/mtzam/OneDrive/Desktop/Work/AMB/ENSE452-MuhammadZaman/Labs/Lab2/Debug/../Core/Src/main.c:110: undefined reference to `HAL_USART2_Transmit'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:88: Lab2.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+09:57:43 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:14: warning: implicit declaration of function 'HAL_UART2_Transmit'; did you mean 'HAL_UART_Transmit'? [-Wimplicit-function-declaration]
+  104 |              HAL_UART2_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+      |              ^~~~~~~~~~~~~~~~~~
+      |              HAL_UART_Transmit
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab2\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+C:/ST/STM32CubeIDE_1.16.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/mtzam/OneDrive/Desktop/Work/AMB/ENSE452-MuhammadZaman/Labs/Lab2/Debug/../Core/Src/main.c:104: undefined reference to `HAL_UART2_Transmit'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:88: Lab2.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+09:57:54 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab2\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-size  Lab2.elf 
+arm-none-eabi-objdump -h -S Lab2.elf  > "Lab2.list"
+   text	   data	    bss	    dec	    hex	filename
+   6724	     12	   1652	   8388	   20c4	Lab2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab2.list
+ 
+10:02:47 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab2\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
+arm-none-eabi-size  Lab2.elf 
+arm-none-eabi-objdump -h -S Lab2.elf  > "Lab2.list"
+   text	   data	    bss	    dec	    hex	filename
+   6608	     12	   1652	   8272	   2050	Lab2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lab2.list
+ 
+10:05:28 **** Incremental Build of configuration Debug for project Lab2 ****
+make -j16 all 
+arm-none-eabi-size  Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6608	     12	   1652	   8272	   2050	Lab2.elf
+Finished building: default.size.stdout
+ 
