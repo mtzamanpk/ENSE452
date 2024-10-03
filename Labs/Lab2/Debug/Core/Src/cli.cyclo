@@ -1,5 +1,5 @@
-../Core/Src/cli.c:8:6:uart_send_string	1
-../Core/Src/cli.c:13:6:cli_process_command	6
-../Core/Src/cli.c:42:6:cli_prompt	1
-../Core/Src/cli.c:47:6:cli_welcome	1
-../Core/Src/cli.c:54:6:cli_run	6
+../Core/Src/cli.c:25:6:uart_send_string	1
+../Core/Src/cli.c:30:6:cli_process_command	6
+../Core/Src/cli.c:59:6:cli_prompt	1
+../Core/Src/cli.c:64:6:cli_welcome	1
+../Core/Src/cli.c:71:6:cli_run	6

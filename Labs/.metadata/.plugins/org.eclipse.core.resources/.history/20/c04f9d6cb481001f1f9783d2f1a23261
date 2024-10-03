@@ -1,12 +1,9 @@
-/**
-* FILENAME: cli.h
-*
-* DESCRIPTION:
-*
-* In this file you will find the function headers
-*
-* AUTHOR: Muhammad Zaman 200449177
-*/
+/*
+ * cli.h
+ *
+ *  Created on: Sep 25, 2024
+ *      Author: mtzam
+ */
 
 #ifndef CLI_H
 #define CLI_H

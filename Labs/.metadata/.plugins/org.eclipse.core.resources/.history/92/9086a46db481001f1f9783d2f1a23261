@@ -1,20 +1,3 @@
-/**
-* FILENAME: cli.c
-*
-* DESCRIPTION:
-*
-* In this file, you will find the functions required to make lab 2 functional,
-* usart_send_string, is a helper function i made to send the strings/messages via USART
-* cli_process_comand, is a function made to process commands that are required of the lab
-* cli_prompt, is just a small ui tweak that was made to give the user a better viewing experience
-* cli_welcome, is the welcome message to tell the user information needed when starting the program
-* cli_run, is the main logic for running the program in cli, where it takes all
-* the previous functions and uses them as needed
-*
-* AUTHOR: Muhammad Zaman 200449177
-*/
-
-
 #include "usart.h"
 #include <string.h>
 
@@ -62,7 +45,7 @@ void cli_prompt(void) {
 
 // Function to display welcome message
 void cli_welcome(void) {
-    uart_send_string("Welcome to the Lab 2 CLI!\r\n");
+    uart_send_string("Welcome to the STM32 CLI!\r\n");
     uart_send_string("Type 'HELP' for a list of commands.\r\n\r\n");
     cli_prompt();  // Show initial prompt after the welcome message
 }

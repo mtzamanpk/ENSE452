@@ -62,7 +62,7 @@ void cli_prompt(void) {
 
 // Function to display welcome message
 void cli_welcome(void) {
-    uart_send_string("Welcome to the Lab 2 CLI!\r\n");
+    uart_send_string("Welcome to the STM32 CLI!\r\n");
     uart_send_string("Type 'HELP' for a list of commands.\r\n\r\n");
     cli_prompt();  // Show initial prompt after the welcome message
 }

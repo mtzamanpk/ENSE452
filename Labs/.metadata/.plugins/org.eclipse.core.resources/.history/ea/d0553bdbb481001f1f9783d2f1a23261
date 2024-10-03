@@ -15,19 +15,6 @@
   *
   ******************************************************************************
   */
-
-/**
-* FILENAME: main.c
-*
-* DESCRIPTION:
-*
-* In this file you will find the required main function to run the lab, here the only change made
-* was in the while loop, where i called cli_run, and cli_welcome before the while loop because it
-* needs to run once
-*
-* AUTHOR: Muhammad Zaman 200449177
-*/
-
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
