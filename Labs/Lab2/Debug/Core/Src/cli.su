@@ -1,0 +1,5 @@
+../Core/Src/cli.c:8:6:uart_send_string	16	static
+../Core/Src/cli.c:13:6:cli_process_command	16	static
+../Core/Src/cli.c:42:6:cli_prompt	8	static
+../Core/Src/cli.c:47:6:cli_welcome	8	static
+../Core/Src/cli.c:54:6:cli_run	16	static

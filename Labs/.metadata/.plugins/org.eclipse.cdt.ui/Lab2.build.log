@@ -1,10 +1,17 @@
-10:05:28 **** Incremental Build of configuration Debug for project Lab2 ****
+16:25:05 **** Incremental Build of configuration Debug for project Lab2 ****
 make -j16 all 
+arm-none-eabi-gcc "../Core/Src/cli.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/cli.d" -MT"Core/Src/cli.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/cli.o"
+arm-none-eabi-g++ -o "Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab2\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: Lab2.elf
+ 
 arm-none-eabi-size  Lab2.elf 
+arm-none-eabi-objdump -h -S Lab2.elf  > "Lab2.list"
    text	   data	    bss	    dec	    hex	filename
-   6608	     12	   1652	   8272	   2050	Lab2.elf
+   7516	     12	   1748	   9276	   243c	Lab2.elf
 Finished building: default.size.stdout
  
+Finished building: Lab2.list
+ 
 
-10:05:28 Build Finished. 0 errors, 0 warnings. (took 202ms)
+16:25:06 Build Finished. 0 errors, 0 warnings. (took 834ms)
 

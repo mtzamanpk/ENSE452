@@ -5,12 +5,13 @@
  *      Author: mtzam
  */
 
-#ifndef SRC_CLI_H_
-#define SRC_CLI_H_
-
 #ifndef CLI_H
 #define CLI_H
 
-
+void uart_send_string(const char *str);
+void cli_process_command(const char *cmd);
+void cli_prompt(void);
+void cli_run(void);
+void cli_welcome(void);
 
 #endif /* SRC_CLI_H_ */
