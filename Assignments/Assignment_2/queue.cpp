@@ -74,7 +74,7 @@ void Queue::insert(Data d, unsigned position)
     if (position > size())
     {
         throw std::out_of_range("insert: range error.");
-        return;
+        return;  // Instead of exit(3), just return to allow the program to continue
     }
 
     // Create a new QElement to store the provided data.
