@@ -27,25 +27,25 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  11 .ARM.attributes 00000029  00000000  00000000  0000300c  2**0
                   CONTENTS, READONLY
- 12 .debug_info   00006981  00000000  00000000  00003035  2**0
+ 12 .debug_info   00006988  00000000  00000000  00003035  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 13 .debug_abbrev 000015fc  00000000  00000000  000099b6  2**0
+ 13 .debug_abbrev 000015fc  00000000  00000000  000099bd  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_aranges 00000668  00000000  00000000  0000afb8  2**3
+ 14 .debug_aranges 00000668  00000000  00000000  0000afc0  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_rnglists 000004d4  00000000  00000000  0000b620  2**0
+ 15 .debug_rnglists 000004d4  00000000  00000000  0000b628  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_macro  00016bd2  00000000  00000000  0000baf4  2**0
+ 16 .debug_macro  00016bd2  00000000  00000000  0000bafc  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   00008a00  00000000  00000000  000226c6  2**0
+ 17 .debug_line   00008a00  00000000  00000000  000226ce  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00081605  00000000  00000000  0002b0c6  2**0
+ 18 .debug_str    00081605  00000000  00000000  0002b0ce  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  000ac6cb  2**0
+ 19 .comment      00000043  00000000  00000000  000ac6d3  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  000017e4  00000000  00000000  000ac710  2**2
+ 20 .debug_frame  000017e4  00000000  00000000  000ac718  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000077  00000000  00000000  000adef4  2**0
+ 21 .debug_line_str 00000077  00000000  00000000  000adefc  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -277,7 +277,7 @@ void cli_prompt(void) {
 void cli_welcome(void) {
  80002b4:	b580      	push	{r7, lr}
  80002b6:	af00      	add	r7, sp, #0
-    uart_send_string("Welcome to the STM32 CLI!\r\n");
+    uart_send_string("Welcome to the Lab 2 CLI!\r\n");
  80002b8:	4804      	ldr	r0, [pc, #16]	@ (80002cc <cli_welcome+0x18>)
  80002ba:	f7ff ff59 	bl	8000170 <uart_send_string>
     uart_send_string("Type 'HELP' for a list of commands.\r\n\r\n");
