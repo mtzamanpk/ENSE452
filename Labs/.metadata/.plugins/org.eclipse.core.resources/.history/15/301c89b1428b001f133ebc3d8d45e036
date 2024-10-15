@@ -3,14 +3,7 @@
 *
 * DESCRIPTION:
 *
-* In this file you will find the functions and their logic
-* uart_send_string will send the message in non-blocking mode
-* update_status_window is the update status for the LED status
-* cli_process_command process commands
-* cli_prompt simply puts a > in the cli
-* cli_welcome welcomes the user to the cli
-* cli_run runs each command
-* HAL_UART_RxCpltCallback used for UART Receive Complete Callback
+* In this file you will find the functions and their logic,
 *
 * AUTHOR: Muhammad Zaman 200449177
 */
