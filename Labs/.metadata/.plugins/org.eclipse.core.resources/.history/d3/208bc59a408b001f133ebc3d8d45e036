@@ -110,7 +110,7 @@ int main(void)
       uint32_t current_time = HAL_GetTick();
 
       // Check if 5 seconds (5000 milliseconds) have passed since the last update
-      if (current_time - last_update_time >= 10000) {
+      if (current_time - last_update_time >= 5000) {
           update_status_window();  // Update the status window
           last_update_time = current_time;  // Reset the timer
       }

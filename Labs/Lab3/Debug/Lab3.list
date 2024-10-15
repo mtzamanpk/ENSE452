@@ -728,11 +728,11 @@ int main(void)
  800058c:	6038      	str	r0, [r7, #0]
 
       // Check if 5 seconds (5000 milliseconds) have passed since the last update
-      if (current_time - last_update_time >= 5000) {
+      if (current_time - last_update_time >= 10000) {
  800058e:	683a      	ldr	r2, [r7, #0]
  8000590:	687b      	ldr	r3, [r7, #4]
  8000592:	1ad3      	subs	r3, r2, r3
- 8000594:	f241 3287 	movw	r2, #4999	@ 0x1387
+ 8000594:	f242 720f 	movw	r2, #9999	@ 0x270f
  8000598:	4293      	cmp	r3, r2
  800059a:	d9f3      	bls.n	8000584 <main+0x28>
           update_status_window();  // Update the status window

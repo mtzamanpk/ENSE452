@@ -1,16 +1,17 @@
-15:51:35 **** Incremental Build of configuration Debug for project Lab3 ****
+15:58:26 **** Incremental Build of configuration Debug for project Lab3 ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/cli.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/cli.d" -MT"Core/Src/cli.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/cli.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
 ../Core/Src/cli.c: In function 'cli_process_command':
-../Core/Src/cli.c:71:5: warning: implicit declaration of function 'cli_prompt' [-Wimplicit-function-declaration]
-   71 |     cli_prompt();
+../Core/Src/cli.c:81:5: warning: implicit declaration of function 'cli_prompt' [-Wimplicit-function-declaration]
+   81 |     cli_prompt();
       |     ^~~~~~~~~~
 ../Core/Src/cli.c: At top level:
-../Core/Src/cli.c:78:6: warning: conflicting types for 'cli_prompt'; have 'void(void)'
-   78 | void cli_prompt(void) {
+../Core/Src/cli.c:88:6: warning: conflicting types for 'cli_prompt'; have 'void(void)'
+   88 | void cli_prompt(void) {
       |      ^~~~~~~~~~
-../Core/Src/cli.c:71:5: note: previous implicit declaration of 'cli_prompt' with type 'void(void)'
-   71 |     cli_prompt();
+../Core/Src/cli.c:81:5: note: previous implicit declaration of 'cli_prompt' with type 'void(void)'
+   81 |     cli_prompt();
       |     ^~~~~~~~~~
 arm-none-eabi-gcc -o "Lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab3\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: Lab3.elf
@@ -24,5 +25,5 @@ Finished building: default.size.stdout
 Finished building: Lab3.list
  
 
-15:51:36 Build Finished. 0 errors, 2 warnings. (took 666ms)
+15:58:27 Build Finished. 0 errors, 2 warnings. (took 727ms)
 

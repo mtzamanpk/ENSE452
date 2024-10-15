@@ -1,13 +1,3 @@
-/**
-* FILENAME: cli.c
-*
-* DESCRIPTION:
-*
-* In this file you will find the functions and their logic,
-*
-* AUTHOR: Muhammad Zaman 200449177
-*/
-
 #include "usart.h"
 #include <string.h>
 
