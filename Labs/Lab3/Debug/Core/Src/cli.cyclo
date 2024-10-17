@@ -1,7 +1,7 @@
-../Core/Src/cli.c:23:6:uart_send_string	2
-../Core/Src/cli.c:32:6:update_status_window	2
-../Core/Src/cli.c:46:6:cli_process_command	6
-../Core/Src/cli.c:88:6:cli_prompt	1
-../Core/Src/cli.c:93:6:cli_welcome	1
-../Core/Src/cli.c:107:6:cli_run	7
-../Core/Src/cli.c:140:6:HAL_UART_RxCpltCallback	2
+../Core/Src/cli.c:14:6:uart_send_string	2
+../Core/Src/cli.c:23:6:update_status_window	2
+../Core/Src/cli.c:37:6:cli_process_command	6
+../Core/Src/cli.c:70:6:cli_welcome	1
+../Core/Src/cli.c:81:6:cli_prompt	1
+../Core/Src/cli.c:87:6:cli_run	7
+../Core/Src/cli.c:125:6:HAL_UART_RxCpltCallback	2

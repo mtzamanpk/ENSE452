@@ -93,11 +93,10 @@ int main(void)
   // Display welcome message and initial CLI prompt
   cli_welcome();
 
+
   // Start receiving the first character (non-blocking)
   HAL_UART_Receive_IT(&huart2, (uint8_t *)&received_char, 1);
   /* USER CODE END 2 */
-
-  uint32_t last_update_time = 0;
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
@@ -105,14 +104,6 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	  cli_run();
-      // Get the current time in milliseconds
-      uint32_t current_time = HAL_GetTick();
-
-      // Check if 10 seconds (10000 milliseconds) have passed since the last update
-      if (current_time - last_update_time >= 10000) {
-          update_status_window();  // Update the status window
-          last_update_time = current_time;  // Reset the timer
-      }
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

@@ -1,26 +1,10 @@
-/**
-* FILENAME: cli.c
-*
-* DESCRIPTION:
-*
-* In this file you will find the functions and their logic
-* uart_send_string will send the message in non-blocking mode
-* update_status_window is the update status for the LED status
-* cli_process_command process commands
-* cli_prompt simply puts a > in the cli
-* cli_welcome welcomes the user to the cli
-* cli_run runs each command
-* HAL_UART_RxCpltCallback used for UART Receive Complete Callback
-*
-* AUTHOR: Muhammad Zaman 200449177
-*/
-
 #include "usart.h"
 #include <string.h>
 
 // Buffers and indexes
 char input_buffer[100];
 int buffer_index = 0;
+const int prompt_length = 2;  // Length of the prompt ('> ')
 
 // Variable to store the received character
 volatile uint8_t received_char;
@@ -35,11 +19,11 @@ void uart_send_string(const char *str) {
     HAL_UART_Transmit_IT(&huart2, (uint8_t*)str, strlen(str));
 }
 
-// Function to update the status window
+// Function to update the status window (shown once)
 void update_status_window(void) {
-	uart_send_string("\x1b[2J");  // Clear the screen
-	uart_send_string("\x1b[0;0H");  // Move cursor to top-left corner
-	uart_send_string("\x1b[10;r");  // Create a scrollable window
+    uart_send_string("\x1b[2J");  // Clear the screen
+    uart_send_string("\x1b[24;1H");  // Move cursor to bottom-left corner (row 24, col 1)
+    uart_send_string("\x1b[10;r");  // Create a scrollable window
     uart_send_string("==== Status Window ====\r\n");
     if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_5)) {
         uart_send_string("LED is ON\r\n");
@@ -60,18 +44,12 @@ void cli_process_command(const char *cmd) {
         HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
         uart_send_string("LED turned OFF\r\n");
     } else if (strcmp(cmd, "STATUS") == 0) {
-        // Clear the screen when STATUS command is entered
-        uart_send_string("\x1b[2J");  // Clear the screen
-        uart_send_string("\x1b[0;0H");  // Move cursor to the top-left corner
-
-        // Now send the status information
-        uart_send_string("==== Status Window ====\r\n");
+        uart_send_string("LED Status: ");
         if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_5)) {
-            uart_send_string("LED is ON\r\n");
+            uart_send_string("ON\r\n");
         } else {
-            uart_send_string("LED is OFF\r\n");
+            uart_send_string("OFF\r\n");
         }
-        uart_send_string("=======================\r\n");
     } else if (strcmp(cmd, "HELP") == 0) {
         uart_send_string("Available commands:\r\n");
         uart_send_string("LED ON - Turns the LED on\r\n");
@@ -88,18 +66,10 @@ void cli_process_command(const char *cmd) {
     cli_prompt();
 }
 
-
-
-
-// Function to show the prompt
-void cli_prompt(void) {
-    uart_send_string("> ");
-}
-
 // Function to display welcome message
 void cli_welcome(void) {
     uart_send_string("\x1b[2J");  // Clear the screen
-    uart_send_string("\x1b[0;0H");  // Move cursor to top-left corner
+    uart_send_string("\x1b[24;1H");  // Move cursor to bottom-left corner (row 24, col 1)
     uart_send_string("\x1b[10;r");  // Create a scrollable window
 
     update_status_window();  // Initial status window update
@@ -108,38 +78,46 @@ void cli_welcome(void) {
     cli_prompt();  // Show initial prompt
 }
 
+void cli_prompt(void) {
+    uart_send_string("\x1b[24;1H");  // Move cursor to bottom-left corner (row 24, col 1)
+    uart_send_string("> ");          // Display the prompt
+    buffer_index = prompt_length;    // Reset buffer index to start after the prompt
+}
 
-
-// Main CLI function using non-blocking USART
 void cli_run(void) {
     if (data_received) {
-        // Reset the flag
-        data_received = 0;
+        data_received = 0;  // Reset the flag
 
-        // Check for new line (command end)
+        // If Enter key is pressed
         if (received_char == '\r' || received_char == '\n') {
-            input_buffer[buffer_index] = '\0';  // Null-terminate the string
+            input_buffer[buffer_index - prompt_length] = '\0';  // Null-terminate the string
+            uart_send_string("\r\n");           // Move to new line
             cli_process_command(input_buffer);  // Process the command
-            buffer_index = 0;                   // Reset buffer
-        } else if (received_char == '\b') {  // Backspace handling
-            if (buffer_index > 0) {
-                buffer_index--;
-                uart_send_string("\b \b");  // Erase the character from the terminal
+            buffer_index = prompt_length;       // Reset buffer after processing the command
+        }
+        else if (received_char == '\b') {  // Backspace handling
+            // Ensure the user can't delete past the start of input (after the prompt)
+            if (buffer_index > prompt_length) {  // Only allow backspace if something is typed
+                buffer_index--;  // Remove last character from buffer
+                uart_send_string("\b \b");  // Erase the character from terminal
             }
-        } else {
-            input_buffer[buffer_index++] = received_char;  // Add to buffer
+        }
+        else {
+            // Add received character to buffer
+            input_buffer[buffer_index - prompt_length] = received_char;
+            buffer_index++;  // Move the buffer index forward
             uart_send_string((const char *)&received_char);  // Echo character
 
             // Prevent buffer overflow
-            if (buffer_index >= sizeof(input_buffer)) {
-                buffer_index = 0;
+            if (buffer_index - prompt_length >= sizeof(input_buffer)) {
+                buffer_index = prompt_length;  // Reset buffer
                 uart_send_string("\r\nError: Input buffer overflow.\r\n");
-                cli_prompt();
+                cli_prompt();  // Show prompt after error
             }
         }
 
-        // Start receiving next character (non-blocking)
-        HAL_UART_Receive_IT(&huart2, (uint8_t *)&received_char, 1);  // Re-enable non-blocking receive
+        // Re-enable receiving next character (non-blocking)
+        HAL_UART_Receive_IT(&huart2, (uint8_t *)&received_char, 1);
     }
 }
 
