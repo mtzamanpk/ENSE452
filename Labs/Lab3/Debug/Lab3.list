@@ -741,7 +741,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    /* USER CODE END WHILE */
+	/* USER CODE END WHILE */
 	  cli_run();
  80005a0:	f7ff fef6 	bl	8000390 <cli_run>
 	  TimCount = __HAL_TIM_GET_COUNTER(&htim4);
@@ -1213,9 +1213,9 @@ void MX_TIM4_Init(void)
  800075c:	4b1d      	ldr	r3, [pc, #116]	@ (80007d4 <MX_TIM4_Init+0x94>)
  800075e:	4a1e      	ldr	r2, [pc, #120]	@ (80007d8 <MX_TIM4_Init+0x98>)
  8000760:	601a      	str	r2, [r3, #0]
-  htim4.Init.Prescaler = 16384;
+  htim4.Init.Prescaler = 8192;
  8000762:	4b1c      	ldr	r3, [pc, #112]	@ (80007d4 <MX_TIM4_Init+0x94>)
- 8000764:	f44f 4280 	mov.w	r2, #16384	@ 0x4000
+ 8000764:	f44f 5200 	mov.w	r2, #8192	@ 0x2000
  8000768:	605a      	str	r2, [r3, #4]
   htim4.Init.CounterMode = TIM_COUNTERMODE_UP;
  800076a:	4b1a      	ldr	r3, [pc, #104]	@ (80007d4 <MX_TIM4_Init+0x94>)

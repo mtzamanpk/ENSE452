@@ -1,18 +1,7 @@
-18:33:27 **** Incremental Build of configuration Debug for project Lab3 ****
+18:48:04 **** Incremental Build of configuration Debug for project Lab3 ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/cli.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/cli.d" -MT"Core/Src/cli.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/cli.o"
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-../Core/Src/cli.c: In function 'cli_process_command':
-../Core/Src/cli.c:98:5: warning: implicit declaration of function 'cli_prompt' [-Wimplicit-function-declaration]
-   98 |     cli_prompt();
-      |     ^~~~~~~~~~
-../Core/Src/cli.c: At top level:
-../Core/Src/cli.c:117:6: warning: conflicting types for 'cli_prompt'; have 'void(void)'
-  117 | void cli_prompt(void) {
-      |      ^~~~~~~~~~
-../Core/Src/cli.c:98:5: note: previous implicit declaration of 'cli_prompt' with type 'void(void)'
-   98 |     cli_prompt();
-      |     ^~~~~~~~~~
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/tim.o"
 arm-none-eabi-gcc -o "Lab3.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Lab3\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: Lab3.elf
  
@@ -25,5 +14,5 @@ Finished building: default.size.stdout
 Finished building: Lab3.list
  
 
-18:33:28 Build Finished. 0 errors, 2 warnings. (took 820ms)
+18:48:06 Build Finished. 0 errors, 0 warnings. (took 1s.107ms)
 
