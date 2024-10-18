@@ -40,9 +40,11 @@ void cli_process_command(const char *cmd) {
     if (strcmp(cmd, "LED ON") == 0) {
         HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
         uart_send_string("LED turned ON\r\n");
+        update_status_window();  // Update the status window after turning the LED ON
     } else if (strcmp(cmd, "LED OFF") == 0) {
         HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
         uart_send_string("LED turned OFF\r\n");
+        update_status_window();  // Update the status window after turning the LED OFF
     } else if (strcmp(cmd, "STATUS") == 0) {
         uart_send_string("LED Status: ");
         if (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_5)) {
@@ -65,6 +67,7 @@ void cli_process_command(const char *cmd) {
     // Show the prompt again after processing the command
     cli_prompt();
 }
+
 
 // Function to display welcome message
 void cli_welcome(void) {
