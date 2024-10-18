@@ -2,33 +2,36 @@
 * FILENAME: cli.h
 *
 * DESCRIPTION:
+* This header file contains the function declarations and global variable
+* declarations necessary for the Command-Line Interface (CLI) functionality
+* in the project. It includes functions for processing commands, sending
+* and receiving data via UART, updating the status window, and managing
+* the user input buffer.
 *
-* In this file you will find the function headers
-*
-* AUTHOR: Muhammad Zaman 200449177
+* AUTHOR:  Muhammad Zaman 200449177
 */
+
 #ifndef CLI_H
 #define CLI_H
 
 #include "stm32f1xx_hal.h"
 
-// Buffer for CLI input
-extern char input_buffer[100];
-extern int buffer_index;
+// Global buffer for storing CLI input
+extern char input_buffer[100];  // Stores the current command entered by the user
+extern int buffer_index;        // Tracks the position in the input buffer
 
-// Declare received_char as extern so it can be used in main.c
-extern volatile uint8_t received_char;
+// UART input character (used for non-blocking reception)
+extern volatile uint8_t received_char;  // Holds the character received from UART
 
-// Function prototypes
-void uart_send_string(const char *str);      // Sends a string via UART
-void cli_process_command(const char *cmd);   // Processes commands entered by the user
-void cli_prompt(void);                       // Displays the prompt in the terminal
-void cli_welcome(void);                      // Displays the welcome message and initial prompt
-void cli_run(void);                          // Main CLI function to handle input
-void update_status_window(void);             // Function to update the status window
+// CLI Function Prototypes
+void uart_send_string(const char *str);      // Sends a string via UART (non-blocking)
+void cli_process_command(const char *cmd);   // Processes user commands like "LED ON", "STATUS", etc.
+void cli_prompt(void);                       // Displays the CLI prompt on the terminal
+void cli_welcome(void);                      // Displays the welcome message and initial CLI prompt
+void cli_run(void);                          // Main loop for running the CLI and handling user input
+void update_status_window(void);             // Updates the status window (LED status, etc.)
 
-
-// Callback function prototypes
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart);  // UART receive callback
+// Callback Function Prototypes
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart);  // UART RX complete callback
 
 #endif  // CLI_H

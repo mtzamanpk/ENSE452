@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 #include "cli.h"
@@ -88,8 +89,9 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART2_UART_Init();
+  MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
-
+  uint8_t TimCount = 0;
   // Display welcome message and initial CLI prompt
   cli_welcome();
 
@@ -104,6 +106,10 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	  cli_run();
+	  TimCount = __HAL_TIM_GET_COUNTER(&htim4);
+	  if(TimCount == 1){
+		  update_status_window();
+	  }
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
