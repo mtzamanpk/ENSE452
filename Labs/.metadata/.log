@@ -1895,3 +1895,21 @@ java.lang.Exception: Error finishing flash operation
 
 !ENTRY org.eclipse.cdt.core 1 0 2024-11-05 11:35:22.339
 !MESSAGE Indexed 'Lab4' (25 sources, 117 headers) in 1.21 sec: 9,891 declarations; 50,899 references; 2 unresolved inclusions; 36 syntax errors; 188 unresolved names (0.31%)
+!SESSION 2024-11-05 14:42:14.268 -----------------------------------------------
+eclipse.buildId=Version 1.16.1
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-11-05 14:42:23.688
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-11-05 14:43:02.837
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-11-05 14:43:02.849
+!MESSAGE Log4j2 initialized with config file C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-11-05 14:43:25.350
+!MESSAGE Started RMI Server, listening on port 41337
