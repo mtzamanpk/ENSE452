@@ -1,0 +1,120 @@
+/*
+ * timer.c
+ *
+ *  Created on: Oct 23, 2024
+ *      Author: mtzam
+ */
+
+
+
+
+#include "timer.h"
+#include <stdlib.h>  // For random number generation
+#include <stdint.h>
+#include <stdio.h>
+#include "stm32f1xx_hal.h"  // Include HAL for hardware access
+
+// Declare the TIM2 handle (extern) to reference the initialized timer from main.c
+extern TIM_HandleTypeDef htim2;
+
+// Start the timer and return the current timer value
+int16_t timer_start(void) {
+    return (int16_t)__HAL_TIM_GET_COUNTER(&htim2);  // Replace 'htim2' with your timer handle
+}
+
+// Stop the timer and calculate elapsed time since start_time, accounting for wraparound
+int16_t timer_stop(int16_t start_time) {
+    int16_t current_time = (int16_t)__HAL_TIM_GET_COUNTER(&htim2);
+    if (current_time >= start_time) {
+        return current_time - start_time;
+    } else {
+        // Handle wraparound (0xFFFF to 0x0000)
+        return (0xFFFF - start_time) + current_time + 1;
+    }
+}
+
+// Example function to measure 32-bit addition time
+void measure_32bit_addition(int trials) {
+    int32_t a, b, result;
+    int16_t start_time, elapsed_time;
+    int32_t total_time = 0;
+
+    for (int i = 0; i < trials; i++) {
+        a = rand();  // Generate random 32-bit integer
+        b = rand();  // Generate random 32-bit integer
+
+        start_time = timer_start();  // Start the timer
+
+        result = a + b;  // Perform the operation
+
+        elapsed_time = timer_stop(start_time);  // Stop the timer
+        total_time += elapsed_time;  // Accumulate elapsed time
+    }
+
+    // Print average time per operation
+    printf("32-bit addition: Avg ticks = %d\n", total_time / trials);
+}
+
+// Example of measuring 64-bit addition
+void measure_64bit_addition(int trials) {
+    int64_t a, b, result;
+    int16_t start_time, elapsed_time;
+    int32_t total_time = 0;
+
+    for (int i = 0; i < trials; i++) {
+        a = ((int64_t)rand() << 32) | rand();  // Generate random 64-bit integer
+        b = ((int64_t)rand() << 32) | rand();  // Generate another random 64-bit integer
+
+        start_time = timer_start();  // Start the timer
+
+        result = a + b;  // Perform 64-bit addition
+
+        elapsed_time = timer_stop(start_time);  // Stop the timer
+        total_time += elapsed_time;  // Accumulate elapsed time
+    }
+
+    printf("64-bit addition: Avg ticks = %d\n", total_time / trials);
+}
+
+// Example of measuring 32-bit multiplication
+void measure_32bit_multiplication(int trials) {
+    int32_t a, b, result;
+    int16_t start_time, elapsed_time;
+    int32_t total_time = 0;
+
+    for (int i = 0; i < trials; i++) {
+        a = rand();  // Generate random 32-bit integer
+        b = rand();  // Generate another random 32-bit integer
+
+        start_time = timer_start();  // Start the timer
+
+        result = a * b;  // Perform 32-bit multiplication
+
+        elapsed_time = timer_stop(start_time);  // Stop the timer
+        total_time += elapsed_time;  // Accumulate elapsed time
+    }
+
+    printf("32-bit multiplication: Avg ticks = %d\n", total_time / trials);
+}
+
+// Example of measuring 64-bit multiplication
+void measure_64bit_multiplication(int trials) {
+    int64_t a, b, result;
+    int16_t start_time, elapsed_time;
+    int32_t total_time = 0;
+
+    for (int i = 0; i < trials; i++) {
+        a = ((int64_t)rand() << 32) | rand();  // Generate random 64-bit integer
+        b = ((int64_t)rand() << 32) | rand();  // Generate another random 64-bit integer
+
+        start_time = timer_start();  // Start the timer
+
+        result = a * b;  // Perform 64-bit multiplication
+
+        elapsed_time = timer_stop(start_time);  // Stop the timer
+        total_time += elapsed_time;  // Accumulate elapsed time
+    }
+
+    printf("64-bit multiplication: Avg ticks = %d\n", total_time / trials);
+}
+

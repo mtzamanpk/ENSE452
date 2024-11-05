@@ -1,0 +1,13 @@
+../Core/Src/timer.c:35:6:print_result	48	static
+../Core/Src/timer.c:48:9:timer_start	4	static
+../Core/Src/timer.c:53:9:timer_stop	24	static
+../Core/Src/timer.c:64:6:initialize_random_generator	8	static
+../Core/Src/timer.c:69:6:measure_32bit_addition	48	static
+../Core/Src/timer.c:91:6:measure_64bit_addition	128	static
+../Core/Src/timer.c:114:6:measure_32bit_multiplication	48	static
+../Core/Src/timer.c:137:6:measure_64bit_multiplication	128	static
+../Core/Src/timer.c:160:6:measure_32bit_division	48	static
+../Core/Src/timer.c:183:6:measure_64bit_division	120	static
+../Core/Src/timer.c:206:6:measure_copy_8byte_struct	48	static
+../Core/Src/timer.c:225:6:measure_copy_128byte_struct	288	static
+../Core/Src/timer.c:244:6:measure_copy_1024byte_struct	2080	static

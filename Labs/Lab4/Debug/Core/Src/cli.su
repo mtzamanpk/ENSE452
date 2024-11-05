@@ -1,0 +1,7 @@
+../Core/Src/cli.c:33:6:uart_send_string	16	static
+../Core/Src/cli.c:42:6:update_status_window	8	static
+../Core/Src/cli.c:58:6:cli_process_command	16	static
+../Core/Src/cli.c:118:6:cli_welcome	8	static
+../Core/Src/cli.c:133:6:cli_prompt	8	static
+../Core/Src/cli.c:140:6:cli_run	8	static
+../Core/Src/cli.c:179:6:HAL_UART_RxCpltCallback	16	static
