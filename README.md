@@ -11,3 +11,5 @@
 ### [Lab 1](https://github.com/mtzamanpk/ENSE452-MuhammadZaman/tree/main/Labs/Lab1/Core/Src)
 ### [Lab 2](https://github.com/mtzamanpk/ENSE452-MuhammadZaman/tree/main/Labs/Lab2/Core/Src)
 ### [Lab 3](https://github.com/mtzamanpk/ENSE452-MuhammadZaman/tree/main/Labs/Lab3/Core/Src)
+### [Lab 4 readme](https://github.com/mtzamanpk/ENSE452-MuhammadZaman/tree/main/Labs/Lab4)
+### [Lab 4 code](https://github.com/mtzamanpk/ENSE452-MuhammadZaman/tree/main/Labs/Lab4/Core/Src)
