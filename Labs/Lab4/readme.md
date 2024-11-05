@@ -64,6 +64,6 @@ Running timing tests...
 - **64-bit Division**: Avg ticks = 4  
 - **8-byte Struct Copy**: Avg ticks = 4  
 - **128-byte Struct Copy**: Avg ticks = 4  
-- **1024-byte Struct Copy**: Avg ticks = 5  
+- **1024-byte Struct Copy**: Avg ticks = 4  
 
 Timing tests completed.
