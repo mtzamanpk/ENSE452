@@ -15,21 +15,6 @@
   *
   ******************************************************************************
   */
-/**
-* FILENAME: main.c
-*
-* DESCRIPTION:
-* This file contains the main implementation for the FreeRTOS-based Command-Line Interface (CLI)
-* on the STM32 microcontroller. It includes:
-* - Initialization of FreeRTOS tasks for LED control and CLI handling.
-* - UART communication setup for receiving and processing user commands.
-* - Functions to control the LED blink rate based on user input.
-*
-* AUTHOR: Muhammad Zaman
-* STUDENT ID: 200449177
-* DATE: [Insert Date]
-*/
-
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
