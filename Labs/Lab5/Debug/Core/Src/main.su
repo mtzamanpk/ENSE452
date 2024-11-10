@@ -1,0 +1,12 @@
+../Core/Src/main.c:82:5:main	104	static
+../Core/Src/main.c:185:6:SystemClock_Config	72	static
+../Core/Src/main.c:224:13:MX_USART2_UART_Init	8	static
+../Core/Src/main.c:257:13:MX_GPIO_Init	40	static
+../Core/Src/main.c:296:6:CLI_Transmit	16	static
+../Core/Src/main.c:300:6:welcomeMessage	8	static
+../Core/Src/main.c:313:5:CLI_Receive	24	static
+../Core/Src/main.c:349:6:StartLEDTask	24	static
+../Core/Src/main.c:373:6:StartCLIReceiveTask	176	static
+../Core/Src/main.c:434:6:StartCLIUpdateTask	72	static
+../Core/Src/main.c:466:6:HAL_TIM_PeriodElapsedCallback	16	static
+../Core/Src/main.c:483:6:Error_Handler	4	static,ignoring_inline_asm
