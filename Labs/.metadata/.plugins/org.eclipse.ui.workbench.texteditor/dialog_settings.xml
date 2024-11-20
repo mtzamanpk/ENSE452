@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="Queue"/>
 		<list key="findhistory">
+			<item value="Queue"/>
+			<item value="void CLI_Transmit"/>
+			<item value="CLI_Transmit"/>
 			<item value="HAL_OK"/>
 			<item value="void HAL_UART_Rx"/>
 			<item value="HAL_UART_Rx"/>
