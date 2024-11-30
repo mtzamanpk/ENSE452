@@ -70,6 +70,9 @@ void DisplayUpdateTaskHandle(void const * argument);
 QueueHandle_t floorQueue;
 int currentFloor = 1; // Initial floor
 volatile int insideState = 0; // 0 = Outside, 1 = Inside
+volatile int emergencyState = 0; // 0 = Normal, 1 = Emergency
+SemaphoreHandle_t emergencySemaphore; // Semaphore for emergency mode
+
 
 /* USER CODE END PFP */
 
@@ -140,13 +143,13 @@ int main(void)
   /* Create the thread(s) */
   /* definition and creation of FloorSelectionT */
   /* Task Initialization */
-  osThreadDef(FloorSelectionT, FloorSelectionTaskHandle, osPriorityNormal, 0, 128);
+  osThreadDef(FloorSelectionT, FloorSelectionTaskHandle, osPriorityLow, 0, 128);
   FloorSelectionTHandle = osThreadCreate(osThread(FloorSelectionT), NULL);
 
   osThreadDef(ElevatorMovemen, ElevatorMovementTaskHandle, osPriorityAboveNormal, 0, 256);
   ElevatorMovemenHandle = osThreadCreate(osThread(ElevatorMovemen), NULL);
 
-  osThreadDef(DisplayUpdateTa, DisplayUpdateTaskHandle, osPriorityLow, 0, 128);
+  osThreadDef(DisplayUpdateTa, DisplayUpdateTaskHandle, osPriorityHigh, 0, 128);
   DisplayUpdateTaHandle = osThreadCreate(osThread(DisplayUpdateTa), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
@@ -319,6 +322,29 @@ int CLI_Receive(char *buffer, uint16_t buffer_size) {
     return 1;
 }
 
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+    static uint32_t last_interrupt_time = 0;
+    uint32_t current_time = HAL_GetTick();
+
+    if (GPIO_Pin == GPIO_PIN_13) { // Blue button pressed
+        if (current_time - last_interrupt_time > 200) { // Debounce: 200 ms
+            emergencyState = !emergencyState; // Toggle emergency state
+
+            if (emergencyState) {
+                CLI_Transmit("\x1b[4;1H"); // Move to row 4
+                CLI_Transmit("\x1b[K");    // Clear the line
+                CLI_Transmit("Emergency mode activated. All operations halted.\n");
+            } else {
+                CLI_Transmit("\x1b[4;1H");
+                CLI_Transmit("\x1b[K");
+                CLI_Transmit("Emergency mode deactivated. Resuming operations.\n");
+                xSemaphoreGive(emergencySemaphore); // Release the semaphore to resume tasks
+            }
+        }
+        last_interrupt_time = current_time;
+    }
+}
 
 /* USER CODE END 4 */
 
@@ -344,13 +370,17 @@ void FloorSelectionTaskHandle(void const * argument)
         CLI_Transmit("\x1b[24;1H> ");   // Adjust 24 to the number of rows in your terminal
 
         if (CLI_Receive(command_buffer, sizeof(command_buffer))) {
-            // Move cursor up within the scrolling region for command output
+            if (emergencyState) {
+                CLI_Transmit("\x1b[23;1H");
+                CLI_Transmit("Emergency mode active. Commands are disabled.\n");
+                continue;
+            }
+
             CLI_Transmit("\x1b[23;1H"); // Place output above the prompt
             CLI_Transmit("Received: ");
             CLI_Transmit(command_buffer);
             CLI_Transmit("\n");
 
-            // Handle "enter" command
             if (strncmp(command_buffer, "enter", 5) == 0) {
                 if (insideState == 1) {
                     CLI_Transmit("You are already inside the elevator.\n");
@@ -361,7 +391,6 @@ void FloorSelectionTaskHandle(void const * argument)
                 continue;
             }
 
-            // Handle "exit" command
             if (strncmp(command_buffer, "exit", 4) == 0) {
                 if (insideState == 0) {
                     CLI_Transmit("You are already outside the elevator.\n");
@@ -372,10 +401,8 @@ void FloorSelectionTaskHandle(void const * argument)
                 continue;
             }
 
-            // Handle "floor=<x>" commands
             if (strncmp(command_buffer, "floor=", 6) == 0) {
                 if (insideState == 0) {
-                    // User must enter the elevator to select a floor
                     CLI_Transmit("You must enter the elevator to select a floor.\n");
                     continue;
                 }
@@ -384,14 +411,13 @@ void FloorSelectionTaskHandle(void const * argument)
 
                 if (targetFloor >= 1 && targetFloor <= 3) {
                     if (targetFloor == currentFloor) {
-                        // Inform the user they are already on the requested floor
                         char message[50];
                         snprintf(message, sizeof(message), "You are already on floor %d\n", currentFloor);
                         CLI_Transmit(message);
                     } else if (xQueueSend(floorQueue, &targetFloor, pdMS_TO_TICKS(50)) != pdPASS) {
                         CLI_Transmit("Failed to send floor command. Try again.\n");
                     } else {
-                        CLI_Transmit("Moving to selected floor...\n"); // Acknowledge command
+                        CLI_Transmit("Moving to selected floor...\n");
                     }
                 } else {
                     CLI_Transmit("Invalid floor. Enter 1, 2, or 3.\n");
@@ -399,11 +425,12 @@ void FloorSelectionTaskHandle(void const * argument)
                 continue;
             }
 
-            // Handle invalid commands
             CLI_Transmit("Invalid command. Use 'enter', 'exit', or 'floor=<1|2|3>'.\n");
         }
     }
 }
+
+
 
 
 /* USER CODE BEGIN Header_ElevatorMovementTaskHandle */
@@ -420,34 +447,41 @@ void ElevatorMovementTaskHandle(void const * argument)
     for (;;) {
         if (xQueueReceive(floorQueue, &targetFloor, portMAX_DELAY) == pdPASS) {
             while (currentFloor != targetFloor) {
+                if (emergencyState) {
+                    CLI_Transmit("\x1b[4;1H");
+                    CLI_Transmit("\x1b[K");
+                    CLI_Transmit("Emergency mode active. Halting elevator movement.\n");
+
+                    // Wait for emergency mode to be deactivated
+                    xSemaphoreTake(emergencySemaphore, portMAX_DELAY);
+
+                    // Clear emergency message after resuming
+                    CLI_Transmit("\x1b[4;1H");
+                    CLI_Transmit("\x1b[K");
+                }
+
                 if (currentFloor < targetFloor) currentFloor++;
                 else if (currentFloor > targetFloor) currentFloor--;
 
-                // Update UI with the current floor (centralized updates recommended)
-                CLI_Transmit("\x1b[4;1H"); // Move to row 4
-                CLI_Transmit("\x1b[K");    // Clear the line
+                CLI_Transmit("\x1b[4;1H");
+                CLI_Transmit("\x1b[K");
                 char move_message[50];
                 snprintf(move_message, sizeof(move_message), "Moving... Floor: %d\n", currentFloor);
                 CLI_Transmit(move_message);
 
-                osDelay(1000); // Simulate movement delay
+                osDelay(1000);
             }
 
-            // Flash LED 3 times upon arrival
-            for (int i = 0; i < 3; i++) {
-                HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
-                osDelay(200);
-                HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
-                osDelay(200);
-            }
-
-            // Update UI to indicate arrival
-            CLI_Transmit("\x1b[4;1H"); // Move to row 4
-            CLI_Transmit("\x1b[K");    // Clear the line
+            HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+            CLI_Transmit("\x1b[4;1H");
+            CLI_Transmit("\x1b[K");
             CLI_Transmit("Arrived at Target Floor\n");
+            osDelay(2000);
+            HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
         }
     }
 }
+
 
 
 /* USER CODE BEGIN Header_DisplayUpdateTaskHandle */
@@ -461,27 +495,21 @@ void DisplayUpdateTaskHandle(void const * argument)
 {
     char message[50];
 
-    // Set up the status window
-    CLI_Transmit("\x1b[2J");               // Clear the entire screen
-    CLI_Transmit("\x1b[1;1H");             // Move to row 1, column 1
-
-    // Status window headers
-    CLI_Transmit("Elevator Status\n");
-    CLI_Transmit("Current Floor: 1\n");    // Initial floor display
-    CLI_Transmit("=================================================\n");
-
-    // Set up scrolling region for CLI commands
-    CLI_Transmit("\x1b[4;1r");             // Set scrolling region from row 4 to the bottom
-    CLI_Transmit("\x1b[4;1H");             // Move cursor to the start of the scrolling region
-
     for (;;) {
-        // Dynamically update the current floor in the status window
+        // Save cursor position
+        CLI_Transmit("\x1b[s");
+
+        // Update the current floor in the status window
         snprintf(message, sizeof(message), "\x1b[2;16H%d", currentFloor); // Update "Current Floor"
         CLI_Transmit(message);
+
+        // Restore cursor position
+        CLI_Transmit("\x1b[u");
 
         osDelay(1000); // Update every second
     }
 }
+
 
 
 
