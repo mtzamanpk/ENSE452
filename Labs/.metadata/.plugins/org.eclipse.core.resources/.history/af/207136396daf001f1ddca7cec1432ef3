@@ -336,17 +336,14 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
         if (current_time - last_interrupt_time > 200) { // Debounce: 200 ms
             if (!emergencyState) { // Only enter emergency mode
                 emergencyState = 1;
-
-                // Clear the screen and show emergency message
-                CLI_Transmit("\x1b[2J");        // Clear the screen
-                CLI_Transmit("\x1b[H");         // Move the cursor to the top-left
+                CLI_Transmit("\x1b[4;1H"); // Move to row 4
+                CLI_Transmit("\x1b[K");    // Clear the line
                 CLI_Transmit("Emergency mode activated. All operations halted.\n");
             }
         }
         last_interrupt_time = current_time;
     }
 }
-
 
 /* USER CODE END 4 */
 
