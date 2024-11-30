@@ -2,9 +2,10 @@
 CAD.formats=
 CAD.pinconfig=
 CAD.provider=
+FREERTOS.BinarySemaphores01=emergencySemaphore,Dynamic,NULL,Available
 FREERTOS.FootprintOK=true
-FREERTOS.IPParameters=Tasks01,configUSE_NEWLIB_REENTRANT,FootprintOK
-FREERTOS.Tasks01=FloorSelectionT,1,128,FloorSelectionTaskHandle,Default,NULL,Dynamic,NULL,NULL;ElevatorMovemen,0,256,ElevatorMovementTaskHandle,Default,NULL,Dynamic,NULL,NULL;DisplayUpdateTa,-1,128,DisplayUpdateTaskHandle,Default,NULL,Dynamic,NULL,NULL;EmergencyHandle,2,128,EmergencyTaskHandle,Default,NULL,Dynamic,NULL,NULL
+FREERTOS.IPParameters=Tasks01,configUSE_NEWLIB_REENTRANT,FootprintOK,BinarySemaphores01
+FREERTOS.Tasks01=FloorSelectionT,1,128,FloorSelectionTaskHandle,Default,NULL,Dynamic,NULL,NULL;ElevatorMovemen,0,256,ElevatorMovementTaskHandle,Default,NULL,Dynamic,NULL,NULL;DisplayUpdateTa,-1,128,DisplayUpdateTaskHandle,Default,NULL,Dynamic,NULL,NULL
 FREERTOS.configUSE_NEWLIB_REENTRANT=0
 File.Version=6
 KeepUserPlacement=false

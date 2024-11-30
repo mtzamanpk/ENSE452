@@ -20,9 +20,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
-#include <string.h>
-#include <stdio.h>
-#include <stdlib.h>
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 // Forward declarations
@@ -52,6 +50,7 @@ UART_HandleTypeDef huart2;
 osThreadId FloorSelectionTHandle;
 osThreadId ElevatorMovemenHandle;
 osThreadId DisplayUpdateTaHandle;
+osSemaphoreId emergencySemaphoreHandle;
 /* USER CODE BEGIN PV */
 
 
@@ -128,6 +127,11 @@ int main(void)
   /* add mutexes, ... */
   /* USER CODE END RTOS_MUTEX */
 
+  /* Create the semaphores(s) */
+  /* definition and creation of emergencySemaphore */
+  osSemaphoreDef(emergencySemaphore);
+  emergencySemaphoreHandle = osSemaphoreCreate(osSemaphore(emergencySemaphore), 1);
+
   /* USER CODE BEGIN RTOS_SEMAPHORES */
   /* add semaphores, ... */
   /* USER CODE END RTOS_SEMAPHORES */
@@ -142,14 +146,15 @@ int main(void)
 
   /* Create the thread(s) */
   /* definition and creation of FloorSelectionT */
-  /* Task Initialization */
-  osThreadDef(FloorSelectionT, FloorSelectionTaskHandle, osPriorityLow, 0, 128);
+  osThreadDef(FloorSelectionT, FloorSelectionTaskHandle, osPriorityBelowNormal, 0, 128);
   FloorSelectionTHandle = osThreadCreate(osThread(FloorSelectionT), NULL);
 
-  osThreadDef(ElevatorMovemen, ElevatorMovementTaskHandle, osPriorityAboveNormal, 0, 256);
+  /* definition and creation of ElevatorMovemen */
+  osThreadDef(ElevatorMovemen, ElevatorMovementTaskHandle, osPriorityNormal, 0, 256);
   ElevatorMovemenHandle = osThreadCreate(osThread(ElevatorMovemen), NULL);
 
-  osThreadDef(DisplayUpdateTa, DisplayUpdateTaskHandle, osPriorityHigh, 0, 128);
+  /* definition and creation of DisplayUpdateTa */
+  osThreadDef(DisplayUpdateTa, DisplayUpdateTaskHandle, osPriorityAboveNormal, 0, 128);
   DisplayUpdateTaHandle = osThreadCreate(osThread(DisplayUpdateTa), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
@@ -329,17 +334,11 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
     if (GPIO_Pin == GPIO_PIN_13) { // Blue button pressed
         if (current_time - last_interrupt_time > 200) { // Debounce: 200 ms
-            emergencyState = !emergencyState; // Toggle emergency state
-
-            if (emergencyState) {
+            if (!emergencyState) { // Only enter emergency mode
+                emergencyState = 1;
                 CLI_Transmit("\x1b[4;1H"); // Move to row 4
                 CLI_Transmit("\x1b[K");    // Clear the line
                 CLI_Transmit("Emergency mode activated. All operations halted.\n");
-            } else {
-                CLI_Transmit("\x1b[4;1H");
-                CLI_Transmit("\x1b[K");
-                CLI_Transmit("Emergency mode deactivated. Resuming operations.\n");
-                xSemaphoreGive(emergencySemaphore); // Release the semaphore to resume tasks
             }
         }
         last_interrupt_time = current_time;
@@ -370,17 +369,26 @@ void FloorSelectionTaskHandle(void const * argument)
         CLI_Transmit("\x1b[24;1H> ");   // Adjust 24 to the number of rows in your terminal
 
         if (CLI_Receive(command_buffer, sizeof(command_buffer))) {
-            if (emergencyState) {
-                CLI_Transmit("\x1b[23;1H");
-                CLI_Transmit("Emergency mode active. Commands are disabled.\n");
-                continue;
-            }
-
             CLI_Transmit("\x1b[23;1H"); // Place output above the prompt
             CLI_Transmit("Received: ");
             CLI_Transmit(command_buffer);
             CLI_Transmit("\n");
 
+            // Handle emergency exit command
+            if (strncmp(command_buffer, "exit_emergency", 14) == 0) {
+                if (!emergencyState) {
+                    CLI_Transmit("System is not in emergency mode.\n");
+                } else {
+                    emergencyState = 0; // Deactivate emergency mode
+                    CLI_Transmit("Emergency mode deactivated. Resuming operations.\n");
+                    if (emergencySemaphoreHandle != NULL) {
+                        xSemaphoreGive(emergencySemaphoreHandle); // Resume tasks
+                    }
+                }
+                continue;
+            }
+
+            // Existing command handling (e.g., "enter", "exit", "floor=")
             if (strncmp(command_buffer, "enter", 5) == 0) {
                 if (insideState == 1) {
                     CLI_Transmit("You are already inside the elevator.\n");
@@ -425,13 +433,10 @@ void FloorSelectionTaskHandle(void const * argument)
                 continue;
             }
 
-            CLI_Transmit("Invalid command. Use 'enter', 'exit', or 'floor=<1|2|3>'.\n");
+            CLI_Transmit("Invalid command. Use 'enter', 'exit', 'floor=<1|2|3>', or 'exit_emergency'.\n");
         }
     }
 }
-
-
-
 
 /* USER CODE BEGIN Header_ElevatorMovementTaskHandle */
 /**
@@ -453,7 +458,9 @@ void ElevatorMovementTaskHandle(void const * argument)
                     CLI_Transmit("Emergency mode active. Halting elevator movement.\n");
 
                     // Wait for emergency mode to be deactivated
-                    xSemaphoreTake(emergencySemaphore, portMAX_DELAY);
+                    if (emergencySemaphoreHandle != NULL) {
+                        xSemaphoreTake(emergencySemaphoreHandle, portMAX_DELAY);
+                    }
 
                     // Clear emergency message after resuming
                     CLI_Transmit("\x1b[4;1H");
@@ -463,8 +470,6 @@ void ElevatorMovementTaskHandle(void const * argument)
                 if (currentFloor < targetFloor) currentFloor++;
                 else if (currentFloor > targetFloor) currentFloor--;
 
-                CLI_Transmit("\x1b[4;1H");
-                CLI_Transmit("\x1b[K");
                 char move_message[50];
                 snprintf(move_message, sizeof(move_message), "Moving... Floor: %d\n", currentFloor);
                 CLI_Transmit(move_message);
@@ -472,16 +477,10 @@ void ElevatorMovementTaskHandle(void const * argument)
                 osDelay(1000);
             }
 
-            HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
-            CLI_Transmit("\x1b[4;1H");
-            CLI_Transmit("\x1b[K");
-            CLI_Transmit("Arrived at Target Floor\n");
-            osDelay(2000);
-            HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+            CLI_Transmit("Arrived at Target Floor.\n");
         }
     }
 }
-
 
 
 /* USER CODE BEGIN Header_DisplayUpdateTaskHandle */
@@ -500,7 +499,7 @@ void DisplayUpdateTaskHandle(void const * argument)
         CLI_Transmit("\x1b[s");
 
         // Update the current floor in the status window
-        snprintf(message, sizeof(message), "\x1b[2;16H%d", currentFloor); // Update "Current Floor"
+        snprintf(message, sizeof(message), "\x1b[2;16HCurrent Floor: %d   ", currentFloor);
         CLI_Transmit(message);
 
         // Restore cursor position
@@ -509,10 +508,6 @@ void DisplayUpdateTaskHandle(void const * argument)
         osDelay(1000); // Update every second
     }
 }
-
-
-
-
 
 
 /**
