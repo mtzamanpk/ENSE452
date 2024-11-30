@@ -7,23 +7,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
   1 .text         0000523c  08000110  08000110  00001110  2**4
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .rodata       00000534  0800534c  0800534c  0000634c  2**2
+  2 .rodata       00000530  0800534c  0800534c  0000634c  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  3 .ARM.extab    00000000  08005880  08005880  00007064  2**0
+  3 .ARM.extab    00000000  0800587c  0800587c  00007064  2**0
                   CONTENTS
-  4 .ARM          00000008  08005880  08005880  00006880  2**2
+  4 .ARM          00000008  0800587c  0800587c  0000687c  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  5 .preinit_array 00000000  08005888  08005888  00007064  2**0
+  5 .preinit_array 00000000  08005884  08005884  00007064  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  6 .init_array   00000004  08005888  08005888  00006888  2**2
+  6 .init_array   00000004  08005884  08005884  00006884  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  7 .fini_array   00000004  0800588c  0800588c  0000688c  2**2
+  7 .fini_array   00000004  08005888  08005888  00006888  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  8 .data         00000064  20000000  08005890  00007000  2**2
+  8 .data         00000064  20000000  0800588c  00007000  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  9 .bss          000011c4  20000064  080058f4  00007064  2**2
+  9 .bss          000011c4  20000064  080058f0  00007064  2**2
                   ALLOC
- 10 ._user_heap_stack 00000600  20001228  080058f4  00007228  2**0
+ 10 ._user_heap_stack 00000600  20001228  080058f0  00007228  2**0
                   ALLOC
  11 .ARM.attributes 00000029  00000000  00000000  00007064  2**0
                   CONTENTS, READONLY
@@ -725,12 +725,10 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
  800050c:	4b0a      	ldr	r3, [pc, #40]	@ (8000538 <HAL_GPIO_EXTI_Callback+0x58>)
  800050e:	2201      	movs	r2, #1
  8000510:	601a      	str	r2, [r3, #0]
-
-                // Clear the screen and show emergency message
-                CLI_Transmit("\x1b[2J");        // Clear the screen
+                CLI_Transmit("\x1b[4;1H"); // Move to row 4
  8000512:	480a      	ldr	r0, [pc, #40]	@ (800053c <HAL_GPIO_EXTI_Callback+0x5c>)
  8000514:	f7ff ff88 	bl	8000428 <CLI_Transmit>
-                CLI_Transmit("\x1b[H");         // Move the cursor to the top-left
+                CLI_Transmit("\x1b[K");    // Clear the line
  8000518:	4809      	ldr	r0, [pc, #36]	@ (8000540 <HAL_GPIO_EXTI_Callback+0x60>)
  800051a:	f7ff ff85 	bl	8000428 <CLI_Transmit>
                 CLI_Transmit("Emergency mode activated. All operations halted.\n");
@@ -1022,10 +1020,10 @@ void FloorSelectionTaskHandle(void const * argument)
  80006e8:	bf00      	nop
         CLI_Transmit("\x1b[24;1H> ");   // Adjust 24 to the number of rows in your terminal
  80006ea:	e73d      	b.n	8000568 <FloorSelectionTaskHandle+0x20>
- 80006ec:	080053d0 	.word	0x080053d0
- 80006f0:	08005410 	.word	0x08005410
- 80006f4:	08005418 	.word	0x08005418
- 80006f8:	08005420 	.word	0x08005420
+ 80006ec:	08005410 	.word	0x08005410
+ 80006f0:	08005418 	.word	0x08005418
+ 80006f4:	08005420 	.word	0x08005420
+ 80006f8:	080053d0 	.word	0x080053d0
  80006fc:	08005428 	.word	0x08005428
  8000700:	08005434 	.word	0x08005434
  8000704:	0800543c 	.word	0x0800543c
@@ -1171,13 +1169,13 @@ void ElevatorMovementTaskHandle(void const * argument)
  800081a:	e7a5      	b.n	8000768 <ElevatorMovementTaskHandle+0x8>
  800081c:	2000032c 	.word	0x2000032c
  8000820:	20000334 	.word	0x20000334
- 8000824:	08005420 	.word	0x08005420
- 8000828:	08005688 	.word	0x08005688
- 800082c:	0800568c 	.word	0x0800568c
+ 8000824:	080053d0 	.word	0x080053d0
+ 8000828:	080053d8 	.word	0x080053d8
+ 800082c:	08005688 	.word	0x08005688
  8000830:	20000328 	.word	0x20000328
  8000834:	20000000 	.word	0x20000000
- 8000838:	080056c0 	.word	0x080056c0
- 800083c:	080056d8 	.word	0x080056d8
+ 8000838:	080056bc 	.word	0x080056bc
+ 800083c:	080056d4 	.word	0x080056d4
 
 08000840 <DisplayUpdateTaskHandle>:
 * @param argument: Not used
@@ -1223,10 +1221,10 @@ void DisplayUpdateTaskHandle(void const * argument)
  8000876:	bf00      	nop
  8000878:	e7e6      	b.n	8000848 <DisplayUpdateTaskHandle+0x8>
  800087a:	bf00      	nop
- 800087c:	080056f4 	.word	0x080056f4
+ 800087c:	080056f0 	.word	0x080056f0
  8000880:	20000000 	.word	0x20000000
- 8000884:	080056f8 	.word	0x080056f8
- 8000888:	08005714 	.word	0x08005714
+ 8000884:	080056f4 	.word	0x080056f4
+ 8000888:	08005710 	.word	0x08005710
 
 0800088c <HAL_TIM_PeriodElapsedCallback>:
   * a global variable "uwTick" used as application time base.
@@ -1947,7 +1945,7 @@ LoopFillZerobss:
   ldr r1, =_edata
  8000bac:	20000064 	.word	0x20000064
   ldr r2, =_sidata
- 8000bb0:	08005890 	.word	0x08005890
+ 8000bb0:	0800588c 	.word	0x0800588c
   ldr r2, =_sbss
  8000bb4:	20000064 	.word	0x20000064
   ldr r4, =_ebss
@@ -4159,7 +4157,7 @@ if (((RCC_ClkInitStruct->ClockType) & RCC_CLOCKTYPE_PCLK1) == RCC_CLOCKTYPE_PCLK
  800180e:	bf00      	nop
  8001810:	40022000 	.word	0x40022000
  8001814:	40021000 	.word	0x40021000
- 8001818:	08005720 	.word	0x08005720
+ 8001818:	0800571c 	.word	0x0800571c
  800181c:	20000004 	.word	0x20000004
  8001820:	20000008 	.word	0x20000008
 
@@ -4294,8 +4292,8 @@ uint32_t HAL_RCC_GetSysClockFreq(void)
  80018b6:	bf00      	nop
  80018b8:	40021000 	.word	0x40021000
  80018bc:	007a1200 	.word	0x007a1200
- 80018c0:	08005738 	.word	0x08005738
- 80018c4:	08005748 	.word	0x08005748
+ 80018c0:	08005734 	.word	0x08005734
+ 80018c4:	08005744 	.word	0x08005744
  80018c8:	003d0900 	.word	0x003d0900
 
 080018cc <HAL_RCC_GetHCLKFreq>:
@@ -4341,7 +4339,7 @@ uint32_t HAL_RCC_GetPCLK1Freq(void)
  80018fc:	4618      	mov	r0, r3
  80018fe:	bd80      	pop	{r7, pc}
  8001900:	40021000 	.word	0x40021000
- 8001904:	08005730 	.word	0x08005730
+ 8001904:	0800572c 	.word	0x0800572c
 
 08001908 <HAL_RCC_GetPCLK2Freq>:
   * @note   Each time PCLK2 changes, this function must be called to update the
@@ -4367,7 +4365,7 @@ uint32_t HAL_RCC_GetPCLK2Freq(void)
  8001924:	4618      	mov	r0, r3
  8001926:	bd80      	pop	{r7, pc}
  8001928:	40021000 	.word	0x40021000
- 800192c:	08005730 	.word	0x08005730
+ 800192c:	0800572c 	.word	0x0800572c
 
 08001930 <HAL_RCC_GetClockConfig>:
   * contains the current clock configuration.
@@ -9881,7 +9879,7 @@ BaseType_t xReturn;
  800357a:	46bd      	mov	sp, r7
  800357c:	bd80      	pop	{r7, pc}
  800357e:	bf00      	nop
- 8003580:	08005718 	.word	0x08005718
+ 8003580:	08005714 	.word	0x08005714
  8003584:	08003b3d 	.word	0x08003b3d
  8003588:	200004b0 	.word	0x200004b0
  800358c:	200004ac 	.word	0x200004ac
@@ -13502,7 +13500,7 @@ uint8_t *puc;
  8004968:	d1f6      	bne.n	8004958 <_strtol_l.constprop.0+0xd8>
  800496a:	f8c8 1000 	str.w	r1, [r8]
  800496e:	e794      	b.n	800489a <_strtol_l.constprop.0+0x1a>
- 8004970:	0800574b 	.word	0x0800574b
+ 8004970:	08005747 	.word	0x08005747
 
 08004974 <strtol>:
  8004974:	4613      	mov	r3, r2
@@ -13619,10 +13617,10 @@ uint8_t *puc;
  8004a62:	4798      	blx	r3
  8004a64:	3601      	adds	r6, #1
  8004a66:	e7f2      	b.n	8004a4e <__libc_init_array+0x1e>
- 8004a68:	08005888 	.word	0x08005888
- 8004a6c:	08005888 	.word	0x08005888
- 8004a70:	08005888 	.word	0x08005888
- 8004a74:	0800588c 	.word	0x0800588c
+ 8004a68:	08005884 	.word	0x08005884
+ 8004a6c:	08005884 	.word	0x08005884
+ 8004a70:	08005884 	.word	0x08005884
+ 8004a74:	08005888 	.word	0x08005888
 
 08004a78 <__retarget_lock_acquire_recursive>:
  8004a78:	4770      	bx	lr
@@ -14139,9 +14137,9 @@ uint8_t *puc;
  8004f18:	a904      	add	r1, sp, #16
  8004f1a:	f000 f87d 	bl	8005018 <_printf_i>
  8004f1e:	e7ed      	b.n	8004efc <_svfiprintf_r+0x1c0>
- 8004f20:	0800584b 	.word	0x0800584b
- 8004f24:	08005851 	.word	0x08005851
- 8004f28:	08005855 	.word	0x08005855
+ 8004f20:	08005847 	.word	0x08005847
+ 8004f24:	0800584d 	.word	0x0800584d
+ 8004f28:	08005851 	.word	0x08005851
  8004f2c:	00000000 	.word	0x00000000
  8004f30:	08004c85 	.word	0x08004c85
 
@@ -14475,8 +14473,8 @@ uint8_t *puc;
  8005248:	2500      	movs	r5, #0
  800524a:	f104 0619 	add.w	r6, r4, #25
  800524e:	e7f5      	b.n	800523c <_printf_i+0x224>
- 8005250:	0800585c 	.word	0x0800585c
- 8005254:	0800586d 	.word	0x0800586d
+ 8005250:	08005858 	.word	0x08005858
+ 8005254:	08005869 	.word	0x08005869
 
 08005258 <memmove>:
  8005258:	4288      	cmp	r0, r1

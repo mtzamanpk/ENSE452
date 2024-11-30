@@ -16724,3 +16724,74 @@ Finished building: default.size.stdout
  
 Finished building: Project.list
  
+16:57:07 **** Incremental Build of configuration Debug for project Project ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM3 -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'CLI_Transmit':
+../Core/Src/main.c:296:55: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  296 |         HAL_UART_Transmit(&huart2, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+      |                                                       ^~~~~~
+../Core/Src/main.c:23:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   22 | #include "cmsis_os.h"
+  +++ |+#include <string.h>
+   23 | 
+../Core/Src/main.c:296:55: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  296 |         HAL_UART_Transmit(&huart2, (uint8_t*)message, strlen(message), HAL_MAX_DELAY);
+      |                                                       ^~~~~~
+../Core/Src/main.c:296:55: note: include '<string.h>' or provide a declaration of 'strlen'
+../Core/Src/main.c: In function 'FloorSelectionTaskHandle':
+../Core/Src/main.c:379:21: warning: implicit declaration of function 'strncmp' [-Wimplicit-function-declaration]
+  379 |                 if (strncmp(command_buffer, "exit_emergency", 14) == 0) {
+      |                     ^~~~~~~
+../Core/Src/main.c:379:21: note: include '<string.h>' or provide a declaration of 'strncmp'
+../Core/Src/main.c:379:63: warning: 'strncmp' argument 3 type is 'int' where 'unsigned int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  379 |                 if (strncmp(command_buffer, "exit_emergency", 14) == 0) {
+      |                                                               ^~
+<built-in>: note: built-in 'strncmp' declared here
+../Core/Src/main.c:392:50: warning: 'strncmp' argument 3 type is 'int' where 'unsigned int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  392 |             if (strncmp(command_buffer, "enter", 5) == 0) {
+      |                                                  ^
+<built-in>: note: built-in 'strncmp' declared here
+../Core/Src/main.c:402:49: warning: 'strncmp' argument 3 type is 'int' where 'unsigned int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  402 |             if (strncmp(command_buffer, "exit", 4) == 0) {
+      |                                                 ^
+<built-in>: note: built-in 'strncmp' declared here
+../Core/Src/main.c:412:51: warning: 'strncmp' argument 3 type is 'int' where 'unsigned int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  412 |             if (strncmp(command_buffer, "floor=", 6) == 0) {
+      |                                                   ^
+<built-in>: note: built-in 'strncmp' declared here
+../Core/Src/main.c:418:31: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+  418 |                 targetFloor = atoi(command_buffer + 6);
+      |                               ^~~~
+../Core/Src/main.c:423:25: warning: implicit declaration of function 'snprintf' [-Wimplicit-function-declaration]
+  423 |                         snprintf(message, sizeof(message), "You are already on floor %d\n", currentFloor);
+      |                         ^~~~~~~~
+../Core/Src/main.c:23:1: note: include '<stdio.h>' or provide a declaration of 'snprintf'
+   22 | #include "cmsis_os.h"
+  +++ |+#include <stdio.h>
+   23 | 
+../Core/Src/main.c:423:25: warning: incompatible implicit declaration of built-in function 'snprintf' [-Wbuiltin-declaration-mismatch]
+  423 |                         snprintf(message, sizeof(message), "You are already on floor %d\n", currentFloor);
+      |                         ^~~~~~~~
+../Core/Src/main.c:423:25: note: include '<stdio.h>' or provide a declaration of 'snprintf'
+../Core/Src/main.c: In function 'ElevatorMovementTaskHandle':
+../Core/Src/main.c:475:17: warning: incompatible implicit declaration of built-in function 'snprintf' [-Wbuiltin-declaration-mismatch]
+  475 |                 snprintf(move_message, sizeof(move_message), "Moving... Floor: %d\n", currentFloor);
+      |                 ^~~~~~~~
+../Core/Src/main.c:475:17: note: include '<stdio.h>' or provide a declaration of 'snprintf'
+../Core/Src/main.c: In function 'DisplayUpdateTaskHandle':
+../Core/Src/main.c:503:9: warning: incompatible implicit declaration of built-in function 'snprintf' [-Wbuiltin-declaration-mismatch]
+  503 |         snprintf(message, sizeof(message), "\x1b[2;16HCurrent Floor: %d   ", currentFloor);
+      |         ^~~~~~~~
+../Core/Src/main.c:503:9: note: include '<stdio.h>' or provide a declaration of 'snprintf'
+arm-none-eabi-gcc -o "Project.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\mtzam\OneDrive\Desktop\Work\AMB\ENSE452-MuhammadZaman\Labs\Project\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Project.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Project.elf
+ 
+arm-none-eabi-size  Project.elf 
+arm-none-eabi-objdump -h -S Project.elf  > "Project.list"
+   text	   data	    bss	    dec	    hex	filename
+  22664	    100	   6084	  28848	   70b0	Project.elf
+Finished building: default.size.stdout
+ 
+Finished building: Project.list
+ 

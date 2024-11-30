@@ -5,8 +5,8 @@
 ../Core/Src/main.c:295:6:CLI_Transmit	1
 ../Core/Src/main.c:303:5:CLI_Receive	5
 ../Core/Src/main.c:330:6:HAL_GPIO_EXTI_Callback	4
-../Core/Src/main.c:360:6:FloorSelectionTaskHandle	15
-../Core/Src/main.c:452:6:ElevatorMovementTaskHandle	7
-../Core/Src/main.c:497:6:DisplayUpdateTaskHandle	1
-../Core/Src/main.c:525:6:HAL_TIM_PeriodElapsedCallback	2
-../Core/Src/main.c:542:6:Error_Handler	1
+../Core/Src/main.c:357:6:FloorSelectionTaskHandle	15
+../Core/Src/main.c:449:6:ElevatorMovementTaskHandle	7
+../Core/Src/main.c:494:6:DisplayUpdateTaskHandle	1
+../Core/Src/main.c:522:6:HAL_TIM_PeriodElapsedCallback	2
+../Core/Src/main.c:539:6:Error_Handler	1
