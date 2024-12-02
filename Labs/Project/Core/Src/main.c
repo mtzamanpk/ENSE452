@@ -451,6 +451,11 @@ void ElevatorMovementTaskHandle(void const *argument) {
                 xSemaphoreTake(floorMutex, portMAX_DELAY);
                 if (currentFloor == targetFloor) {
                     xSemaphoreGive(floorMutex);
+
+                    // Turn on the LED on reaching the target floor
+                    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+                    osDelay(500); // Keep the LED on for 500 ms
+                    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
                     break;
                 }
                 currentFloor += (currentFloor < targetFloor) ? 1 : -1;
@@ -460,7 +465,7 @@ void ElevatorMovementTaskHandle(void const *argument) {
                 snprintf(move_message, sizeof(move_message), "Moving... Floor: %d\n", currentFloor);
                 CLI_Transmit(move_message);
 
-                osDelay(1000);
+                osDelay(1000); // Delay for floor movement simulation
             }
             CLI_Transmit("Arrived at Target Floor.\n");
         }

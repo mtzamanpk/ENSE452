@@ -7,6 +7,6 @@
 ../Core/Src/main.c:347:6:HAL_GPIO_EXTI_Callback	24	static
 ../Core/Src/main.c:367:6:FloorSelectionTaskHandle	128	static
 ../Core/Src/main.c:445:6:ElevatorMovementTaskHandle	72	static
-../Core/Src/main.c:480:6:DisplayUpdateTaskHandle	72	static
-../Core/Src/main.c:513:6:HAL_TIM_PeriodElapsedCallback	16	static
-../Core/Src/main.c:530:6:Error_Handler	4	static,ignoring_inline_asm
+../Core/Src/main.c:485:6:DisplayUpdateTaskHandle	72	static
+../Core/Src/main.c:518:6:HAL_TIM_PeriodElapsedCallback	16	static
+../Core/Src/main.c:535:6:Error_Handler	4	static,ignoring_inline_asm
