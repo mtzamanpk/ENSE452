@@ -18,5 +18,6 @@
 ## Labs
 
 ### [Project Milestone Demo](https://github.com/mtzamanpk/ENSE452-MuhammadZaman/blob/main/Project_Documentation/ENSE452%20-%20Project%20Milestone.pdf)
+### [Project Final Demo](https://www.youtube.com/shorts/rKovJ4QvY8o)
 ### [Project Code](https://github.com/mtzamanpk/ENSE452-MuhammadZaman/tree/main/Labs/Project/Core/Src)
 
